@@ -1,0 +1,101 @@
+
+/* FONTS */
+article p,
+h3 {
+   font-family: 'Lato', sans-serif;
+}
+
+/* COLORS */
+#body {
+   color: #fff;
+}
+
+.btn {
+   background: #7e262e;
+   color: #FFECC5;
+}
+.btn:hover,
+.btn.active {
+   background: #721C23;
+   color: #FFECC5;
+}
+
+
+
+
+#body {
+   background: 
+   linear-gradient(
+     rgba(0,0,0,0.4),
+     rgba(0,0,0,0.4)
+   ),
+   url("../../assets/images/backgrounds/waves-dark0.jpg");
+   background-size: 100%;
+   /* background-position: center; */
+}
+
+
+
+
+/* ARTICLE */
+article p {
+   font-size: 1.2rem;
+   font-weight: 700;
+   text-align: justify;
+}
+
+h3 {
+   font-weight: 700;
+   text-align: center;
+}
+
+article span{
+   text-decoration: line-through;
+}
+
+
+
+
+/* CONTACT ME BUTTON */
+.btn {
+   display: table;
+   margin: 30px auto 0 auto;
+   border-radius: 2px;
+   font-weight: 500;
+}
+.btn:hover,
+.btn.active {
+   box-shadow: none;
+}
+
+
+
+
+
+/* PHOTO CREDS */
+#photoCreds {
+   color: #FFECC5;
+   position: relative;
+   left: calc(100vw - 260px);
+}
+.wrapper {
+   min-height: calc(100vh - 174px);
+}
+
+
+
+
+
+/* media queries */
+@media screen and (max-width:500px) {
+   #body { background-size: 120%; }
+}
+@media screen and (max-width:420px) {
+   #body { background-size: 140%; }
+}
+@media screen and (max-width:370px) {
+   #body { background-size: 160%; }
+}
+@media screen and (max-width:345px) {
+   #body { background-size: 180%; }
+}

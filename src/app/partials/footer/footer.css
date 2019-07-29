@@ -1,0 +1,18 @@
+
+footer {
+   background: #7e262e;
+   color: #FFECC5;
+   height: 100px;
+   padding-top: 35px;
+   text-align: center;
+}
+footer a {
+   color: #FFECC5;
+}
+footer a:hover {
+   color: rgba(255,236,197,0.7);
+}
+
+i {
+   margin: 0 10px 0 10px;
+}

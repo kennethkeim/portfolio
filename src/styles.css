@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('~bootstrap/dist/css/bootstrap.min.css');
+
+
+.wrapper {
+   padding-top: 100px;
+   padding-bottom: 80px;
+   min-height: calc(100vh - 150px);
+   margin: 0 auto;
+}

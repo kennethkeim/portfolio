@@ -1,0 +1,13 @@
+
+/* FONTS */
+body { 
+   font-family: 'Montserrat', sans-serif;
+}
+
+
+header,
+.wrapper,
+footer {
+   /* margin: 0; */
+   /* padding: 0; */
+}

@@ -1,0 +1,46 @@
+
+header {
+   height: 50px;
+}
+
+
+nav a  {
+   color: #FFECC5;
+}
+nav a:hover,
+nav a.active {
+   color: #FFECC5;
+   border-bottom: 3px solid #7e262e;
+}
+
+
+
+nav {
+   text-align: right;
+   border-radius: 1px;
+   height: 50px;
+}
+
+nav div {
+   display: inline-block;
+}
+
+nav > a:first-child {
+   float: left;
+   font-size: 1.2rem;
+   font-weight: 500;
+}
+
+nav a {
+   text-decoration: none;
+   margin: 0 15px 0 15px;
+   padding: 6px 0 3px 0;
+   display: inline-block;
+}
+nav a:hover,
+nav a.active {
+   text-decoration: none;
+}
+
+
+
