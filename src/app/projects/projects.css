@@ -1,0 +1,37 @@
+/* FONTS */
+#projects {
+   font-family: 'Lato', sans-serif;
+}
+
+/* COLORS */
+#body {
+   background: #111;
+   color: #fff;
+}
+
+
+
+
+
+
+/* PROJECTS */
+#projects div {
+   margin-bottom: 50px;
+   text-align: center;
+}
+
+#projects img {
+   width: 300px;
+   margin-bottom: 10px;
+   border-radius: 1px;
+}
+
+#projects a {
+   margin-bottom: 10px;
+}
+
+#projects p {
+   width: 300px;
+   text-align: justify;
+   font-size: 0.85rem;
+}

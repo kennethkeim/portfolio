@@ -1,0 +1,42 @@
+/* FONTS */
+article {
+   font-family: 'Lato', sans-serif;
+}
+
+/* COLORS */
+#body {
+   background: #111;
+}
+
+h1,
+h2 {
+   color: #7e262e;
+}
+
+p {
+   color: #fff;
+}
+
+
+
+
+/* ARTICLE */
+h1,
+h2 {
+   text-align: center;
+   font-size: 2rem;
+}
+
+p {
+   text-align: justify;
+}
+
+
+
+/* PROFILE PHOTO */
+img {
+   display: block;
+   margin: 0 auto 25px auto;
+   width: 240px;
+   border-radius: 1px;
+}
