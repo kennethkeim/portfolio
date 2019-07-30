@@ -8,11 +8,8 @@ footer {
 }
 footer a {
    color: #FFECC5;
+   margin: 0 10px 0 10px;
 }
 footer a:hover {
    color: rgba(255,236,197,0.7);
-}
-
-i {
-   margin: 0 10px 0 10px;
 }
