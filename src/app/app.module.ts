@@ -5,10 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app/app';
-import { HomeComponent } from './home/home';
-import { AboutComponent } from './about/about';
-import { ContactComponent } from './contact/contact';
-import { ProjectsComponent } from './projects/projects';
+import { HomeComponent } from './pages/home/home';
+import { AboutComponent } from './pages/about/about';
+import { ContactComponent } from './pages/contact/contact';
+import { ProjectsComponent } from './pages/projects/projects';
 import { NavbarComponent } from './partials/navbar/navbar';
 import { FooterComponent } from './partials/footer/footer';
 
