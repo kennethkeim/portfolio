@@ -67,28 +67,6 @@ h1 {
 
 
 
-/* SUCCESS AND ERROR */
-.success,
-.error {
-   padding: 15px;
-   border-radius: 1.5px;
-   margin-bottom: 20px;
-   text-align: center;
-}
-
-.success {
-   background: #D4EDDA;
-   color: #216130;
-}
-
-.error {
-   background: #FFcbcb;
-   color: #721C23;
-}
-
-
-
-
 
 /* BUTTON */
 .btn {

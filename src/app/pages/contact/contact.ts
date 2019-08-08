@@ -32,6 +32,7 @@ export class ContactComponent {
       .subscribe((data: string) => {
          this.success = data;
       }, (err) => {
+         // I'm getting an error response even if the request was successful
          this.error = err.error;
       });
 
