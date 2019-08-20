@@ -24,8 +24,13 @@ h1 {
 
 
 #body {
-   background-image: url("~/../assets/images/backgrounds/writing1.jpg");
-   background-size: 100%;
+   background-image:
+   linear-gradient(
+     rgba(10, 61, 98, 0.5),
+     rgba(10, 61, 98, 0.5)
+   ),
+   url("~/../assets/images/backgrounds/writing1.jpg");
+   background-size: cover;
 }
 
 
@@ -97,35 +102,13 @@ h1 {
 
 /* media queries */
 @media screen and (max-width:990px) {
-   #body { background-size: 120%; background-position-x: right }
-}
-@media screen and (max-width:825px) {
-   #body { background-size: 140%; }
+   #body { background-position-x: right }
 }
 @media screen and (max-width:707px) {
-   #body { background-size: 160%; background-position-x: center }
-}
-@media screen and (max-width:618px) {
-   #body { background-size: 180%; }
-}
-@media screen and (max-width:576px) {
-   #body { background-size: 200%; }
-}
-@media screen and (max-width:538px) {
-   #body { background-size: 220%; }
+   #body { background-position-x: center }
 }
 
 @media screen and (max-width:500px) {
    .wrapper { padding-top: 70px; }
-}
-
-@media screen and (max-width:468px) {
-   #body { background-size: 260%; }
-}
-@media screen and (max-width:396px) {
-   #body { background-size: 280%; }
-}
-@media screen and (max-width:368px) {
-   #body { background-size: 320%; }
 }
 
