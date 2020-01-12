@@ -1,6 +1,8 @@
 @import '../../../_variables.scss';
 
 
+$cardW: 450px;
+
 /* FONTS */
 #projects {
    font-family: 'Lato', sans-serif;
@@ -18,23 +20,37 @@
 
 
 /* PROJECTS */
-#projects div {
-   margin-bottom: 50px;
-   text-align: center;
-}
+#projects {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   padding: 20px;
 
-#projects img {
-   width: 300px;
-   margin-bottom: 10px;
-   border-radius: 1px;
-}
+   .mycard {
+      flex: 0 0 auto;
+      width: 100%;
+      max-width: $cardW;
+      margin: 0 20px 75px 20px;
+      text-align: center;
+   }
 
-#projects a {
-   margin-bottom: 10px;
-}
+   img, a, small {
+      display: block;
+   }
 
-#projects p {
-   width: 300px;
-   text-align: justify;
-   font-size: 0.85rem;
+   img {
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 1px;
+   }
+
+   small {
+      margin-bottom: 10px;
+      color: $main-dark;
+   }
+
+   p {
+      text-align: justify;
+      font-size: 0.85rem;
+   }
 }
