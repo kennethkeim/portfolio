@@ -1,13 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('./typography.css');
+@import url('./_typography.scss');
 @import url('~bootstrap/dist/css/bootstrap.min.css');
 @import url('~normalize.css/normalize.css');
-@import url('./reset.css');
+@import url('./_reset.scss');
 
 
-#body {
+// #body {
    /* font-family: 'Montserrat', sans-serif; */
-}
+// }
 
 
 .wrapper {

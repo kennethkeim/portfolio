@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.html',
-  styleUrls: ['./footer.css']
+  styleUrls: ['./footer.scss']
 })
-export class FooterComponent {}
+export class FooterComponent {
+   public thisYear = new Date().getFullYear();
+}
