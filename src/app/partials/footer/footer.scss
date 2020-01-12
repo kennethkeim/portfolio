@@ -5,14 +5,23 @@
 footer {
    background: $main-dark;
    color: $text-footer;
-   height: 100px;
+   height: $footerH;
    padding-top: 35px;
    text-align: center;
+
+   a {
+      color: $main-light;
+      font-size: .9rem;
+
+      hover {
+         color: rgba(255,236,197,0.7);
+      }
+   }
+
+   span {
+      width: 20px;
+      display: inline-block;
+   }
+   
 }
-footer a {
-   color: $main-light;
-   margin: 0 10px 0 10px;
-}
-footer a:hover {
-   color: rgba(255,236,197,0.7);
-}
+
