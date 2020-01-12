@@ -8,11 +8,11 @@ header {
 
 
 nav a  {
-   color: $main-light;
+   color: $text-navbar;
 }
 nav a:hover,
 nav a.active {
-   color: $main-light;
+   color: $text-navbar;
    border-bottom: 3px solid $main-dark;
 }
 
