@@ -1,3 +1,7 @@
+@import '../../../_variables.scss';
+
+
+
 .success,
 .error {
    padding: 15px;
@@ -7,11 +11,11 @@
 }
 
 .success {
-   background: #D4EDDA;
-   color: #216130;
+   background: $bg-success;
+   color: $text-success;
 }
 
 .error {
-   background: #FFcbcb;
-   color: #721C23;
+   background: $bg-error;
+   color: $text-error;
 }

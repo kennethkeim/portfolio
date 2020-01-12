@@ -1,3 +1,6 @@
+@import '../../../_variables.scss';
+
+
 
 /* FONTS */
 h1 {
@@ -6,17 +9,17 @@ h1 {
 
 /* COLORS */
 .btn {
-   background: #7e262e;
-   color: #FFECC5;
+   background: $main-dark;
+   color: $main-light;
 }
 .btn:hover,
 .btn.active {
-   background: #721C23;
-   color: #FFECC5;
+   background: $main-dark-hover;
+   color: $main-light;
 }
 
 h1 {
-   color: #FFECC5;
+   color: $main-light;
 }
 
 
@@ -90,7 +93,7 @@ h1 {
 
 /* PHOTO CREDS */
 #photoCreds {
-   color: #FFECC5;
+   color: $main-light;
    position: relative;
    left: calc(100vw - 215px);
 }

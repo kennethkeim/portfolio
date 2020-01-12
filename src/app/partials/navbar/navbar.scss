@@ -1,3 +1,6 @@
+@import '../../../_variables.scss';
+
+
 
 header {
    height: 50px;
@@ -5,12 +8,12 @@ header {
 
 
 nav a  {
-   color: #FFECC5;
+   color: $main-light;
 }
 nav a:hover,
 nav a.active {
-   color: #FFECC5;
-   border-bottom: 3px solid #7e262e;
+   color: $main-light;
+   border-bottom: 3px solid $main-dark;
 }
 
 

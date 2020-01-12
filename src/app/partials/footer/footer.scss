@@ -1,13 +1,16 @@
+@import '../../../_variables.scss';
+
+
 
 footer {
-   background: #7e262e;
-   color: #FFECC5;
+   background: $main-dark;
+   color: $main-light;
    height: 100px;
    padding-top: 35px;
    text-align: center;
 }
 footer a {
-   color: #FFECC5;
+   color: $main-light;
    margin: 0 10px 0 10px;
 }
 footer a:hover {

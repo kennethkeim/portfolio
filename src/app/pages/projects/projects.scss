@@ -1,3 +1,6 @@
+@import '../../../_variables.scss';
+
+
 /* FONTS */
 #projects {
    font-family: 'Lato', sans-serif;
@@ -5,8 +8,8 @@
 
 /* COLORS */
 #body {
-   background: #111;
-   color: #fff;
+   background: $bg-dark;
+   color: $longform-text;
 }
 
 
