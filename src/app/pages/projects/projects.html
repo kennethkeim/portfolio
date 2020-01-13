@@ -7,26 +7,19 @@
       <div id="projects">
 
 
-         <div class="mycard">
-            <img src="~/../assets/images/projects/dog.jpg" alt="photo of a past project">
-            <a target="_blank" rel="noopener noreferrer" href="https://vippuppies.com/dog-description-generator/">
-               Vip Puppies
-            </a>
-            <small>Web and native apps</small>
-            <p>
-               problem: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae tempora reiciendis, eius iusto quibusdam qui nesciunt, voluptatibus voluptate incidunt ratione esse magnam consequuntur quam ad sunt, non obcaecati velit autem?
-            </p>
-            <p>
-               solution: Some text about the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
-            </p>
-         </div>
+         <div *ngFor="let proj of projects" class="mycard">
 
-         <!--          
-         Keim Industrial Surplus
-         iCare Greetings
-         Abner Henry Fine Furniture
-         Swiss Maid
-         -->
+            <img [src]="proj.image" alt="photo of a past project">
+
+            <a target="_blank" rel="noopener noreferrer" [href]="proj.link">
+               {{ proj.name }}
+            </a>
+            
+            <small>{{ proj.shortDesc }}</small>
+            <p>Problem: {{ proj.problem }}</p>
+            <p>Solution: {{ proj.solution }}</p>
+
+         </div>
 
 
       </div>
