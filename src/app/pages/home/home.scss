@@ -27,20 +27,15 @@ h3 {
 
 
 #body {
-   background: 
-   linear-gradient(
-     rgba(0,0,0,0.4),
-     rgba(0,0,0,0.4)
-   ),
-   url("~/../assets/images/backgrounds/waves-dark0.jpg");
+   background:
+   url("~/../assets/images/backgrounds/idea.jpg");
    background-size: cover;
+   background-position: center;
 }
 
 .wrapper {
-   max-width: $width-md;
    display: flex;
    align-items: center;
-   justify-content: center;
 }
 
 
@@ -49,14 +44,13 @@ h3 {
 
 /* ARTICLE */
 article {
-   padding: 5px;
+   padding: 0 $body-spc;
    position: relative;
    bottom: 50px;
 
    p {
-      font-size: 1.2rem;
-      font-weight: 700;
-      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 600;
       margin-bottom: 15px;
    }
 }
@@ -68,8 +62,6 @@ article {
 
 /* CONTACT ME BUTTON */
 .btn {
-   display: table;
-   margin: 0 auto 0 auto;
    border-radius: 2px;
    font-weight: 500;
 }

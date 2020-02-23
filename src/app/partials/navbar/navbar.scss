@@ -36,7 +36,7 @@ nav > a:first-child {
 
 nav a {
    text-decoration: none;
-   margin: 0 15px 0 15px;
+   margin: 0 $body-spc 0 $body-spc;
    padding: 6px 0 3px 0;
    display: inline-block;
 }
