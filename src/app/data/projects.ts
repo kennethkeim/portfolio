@@ -4,14 +4,7 @@ const projects = [
       name: 'VIP Puppies',
       shortDesc: 'web and native apps',
       link: 'https://vippuppies.com',
-      image: '~/../assets/images/projects/dog.jpg',
-      problem: '',
-      solution: ''
-   }, {
-      name: 'iCare Greetings',
-      shortDesc: 'order management',
-      link: 'https://icaregreetings.com',
-      image: '',
+      image: '~/../assets/images/projects/vipp.jpeg',
       problem: '',
       solution: ''
    }, {
@@ -22,10 +15,17 @@ const projects = [
       problem: '',
       solution: ''
    }, {
+      name: 'iCare Greetings',
+      shortDesc: 'order management',
+      link: 'https://icaregreetings.com',
+      image: '~/../assets/images/placeholder_1.jpg',
+      problem: '',
+      solution: ''
+   }, {
       name: 'Swiss Maid Pastries',
       shortDesc: 'order management',
       link: 'https://swissmaidpastries.com',
-      image: '',
+      image: '~/../assets/images/placeholder_1.jpg',
       problem: '',
       solution: ''
    }, {
