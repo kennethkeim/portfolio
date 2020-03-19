@@ -5,8 +5,8 @@ const projects = [
       shortDesc: 'web and native apps',
       link: 'https://vippuppies.com',
       image: '~/../assets/images/projects/vipp.jpeg',
-      problem: '',
-      solution: ''
+      problem: `VIP Puppies needed to migrate from their existing WordPress site. They also needed IOS and Android apps.`,
+      solution: 'Working with a software startup, I was able to provide web and native apps in a cost effective manner using a shared codebase.'
    }, {
       name: 'Keim Industrial Surplus',
       shortDesc: 'website',
@@ -18,19 +18,12 @@ const projects = [
       name: 'iCare Greetings',
       shortDesc: 'order management',
       link: 'https://icaregreetings.com',
-      image: '~/../assets/images/placeholder_1.jpg',
-      problem: '',
-      solution: ''
-   }, {
-      name: 'Swiss Maid Pastries',
-      shortDesc: 'order management',
-      link: 'https://swissmaidpastries.com',
-      image: '~/../assets/images/placeholder_1.jpg',
+      image: '~/../assets/images/projects/icare.jpg',
       problem: '',
       solution: ''
    }, {
       name: 'Abner Henry Fine Furniture',
-      shortDesc: 'inventory management',
+      shortDesc: 'inventory display',
       link: 'https://abnerhenry.com/slabs',
       image: '~/../assets/images/projects/ah.jpg',
       problem: '',
