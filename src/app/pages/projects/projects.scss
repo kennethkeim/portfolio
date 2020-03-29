@@ -36,6 +36,11 @@ $cardW: 350px;
       text-align: center;
    }
 
+   .mycard:nth-child(3),
+   .mycard:nth-child(4) {
+      margin-bottom: 0;
+   }
+
    img, a, small {
       display: block;
    }
