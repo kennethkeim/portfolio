@@ -1,7 +1,6 @@
 @import '../../../_variables.scss';
 
 #body {
-   color: $text-page;
    background:
    url("~/../assets/images/backgrounds/bulb7.jpg");
    background-size: cover;
@@ -15,6 +14,7 @@
 
 // ARTICLE
 article {
+   color: $theme-four;
    padding: 0 $body-spc;
    position: relative;
    bottom: 50px;
