@@ -55,13 +55,6 @@ h1 {
    box-shadow: none;
 }
 
-// PHOTO CREDS
-#photoCreds {
-   color: $theme-four;
-   position: relative;
-   left: calc(100vw - 215px);
-}
-
 // media queries
 @media screen and (max-width:990px) {
    #body { background-position-x: right }
