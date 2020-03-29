@@ -10,7 +10,7 @@
 
             <img [src]="proj.image" alt="photo of a past project">
 
-            <a *ngIf="proj.link; else noLink" target="_blank" rel="noopener noreferrer" [href]="proj.link">
+            <a *ngIf="proj.link; else noLink" target="_blank" rel="noopener noreferrer" [href]="proj.link" class="href">
                {{ proj.name }}
             </a>
 

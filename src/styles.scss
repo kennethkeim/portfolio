@@ -19,3 +19,11 @@
    min-height: calc(100vh - 150px);
    margin: 0 auto;
 }
+
+.href {
+   color: $text-href;
+}
+
+.href:hover {
+   color: $text-href-hover;
+}
