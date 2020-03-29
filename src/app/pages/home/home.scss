@@ -10,17 +10,17 @@
 
 /* COLORS */
 #body {
-   color: $text-home;
+   color: $theme-four;
 }
 
 .btn {
-   background: $main-dark;
-   color: $main-light;
+   background: $theme-one;
+   color: $theme-four;
 }
 .btn:hover,
 .btn.active {
-   background: $main-dark-hover;
-   color: $main-light;
+   background: $theme-one-hover;
+   color: $theme-four;
 }
 
 
@@ -79,7 +79,7 @@ article {
 
 /* PHOTO CREDS */
 #photoCreds {
-   color: $main-light;
+   color: $theme-four;
    position: relative;
    left: calc(100vw - 260px);
 }

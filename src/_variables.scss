@@ -1,24 +1,18 @@
 
-// original theme
-$main-dark: #7E262E;
-$main-dark-hover: #721C23;
-$main-light: #FFECC5;
-$longform-text: #fff;
-$bg-page: #111;
-$text-navbar: $main-light;
-$text-footer: $main-light;
-$text-home: #fff;
+// BASE THEME
+$theme-one: #F44336;
+$theme-one-hover: pink;
+$theme-two: #3F51B5;
+$theme-three: #111;
+$theme-four: #fff;
+// $bg-navbar:
+$text-navbar: $theme-four;
+$bg-footer: $theme-two;
+$text-footer: $theme-four;
+$bg-page: $theme-three;
+$text-page: $theme-four;
 
-// alt theme
-// $main-dark: #e55437;
-// $main-dark-hover: #721C23;
-// $main-light: #fff;
-// $longform-text: #111;
-// $bg-page: #fff;
-// $text-navbar: #3097bf;
-// $text-footer: $main-light;
-// $text-home: #fff;
-
+// MORE STUFF
 $text-error: #721C23;
 $bg-error: #FFcbcb;
 $text-success: #216130;

@@ -3,7 +3,7 @@
 
 
 footer {
-   background: $main-dark;
+   background: $bg-footer;
    color: $text-footer;
    height: $footerH;
    text-align: center;
@@ -12,7 +12,7 @@ footer {
    align-items: center;
 
    a {
-      color: $main-light;
+      color: $theme-four;
    }
 
    #linkedin {
