@@ -1,13 +1,15 @@
 @import '../../../_variables.scss';
 
 #body {
-   background-image:
-   linear-gradient(
-     rgba(0, 0, 0, 0.1),
-     rgba(0, 0, 0, 0.1)
-   ),
-   url("~/../assets/images/backgrounds/writing1.jpg");
-   background-size: cover;
+   // background-image:
+   // linear-gradient(
+   //   rgba(0, 0, 0, 0.1),
+   //   rgba(0, 0, 0, 0.1)
+   // ),
+   // url("~/../assets/images/backgrounds/writing1.jpg");
+   // background-size: cover;
+
+   background-color: $theme-three;
 }
 
 h1 {
@@ -20,7 +22,7 @@ h1 {
 // FORM
 .form-control {
    border: none;
-   background: rgba(245,245,245,0.95);
+   // background: rgba(245,245,245,0.95);
    border-radius: 2px;
    box-shadow: none;
 }
