@@ -8,7 +8,7 @@
             <h1>Contact Me</h1>
             <app-msgs *ngIf="error" [msg]="{type: 'error', text: error}"></app-msgs>
             <app-msgs *ngIf="success" [msg]="{type: 'success', text: success}"></app-msgs>
-      
+
             <form id="contactForm" (ngSubmit)="onSubmit()">
                <div class="row no-gutters">
                   <div class="col-sm-6">
@@ -17,14 +17,14 @@
                         <input type="text" name="name" id="name" class="form-control" placeholder="Your name" [(ngModel)]="name" required>
                      </div>
                   </div>
-      
+
                   <div class="col-sm-6">
                      <div class="ml-sm-2">
                         <label for="email" class="sr-only">Email</label>
                         <input type="email" name="email" id="email" class="form-control" placeholder="Your email" [(ngModel)]="email" required>
                      </div>
                   </div>
-      
+
                   <div class="col-sm-12">
                      <label for="msg" class="sr-only">Message</label>
                      <textarea name="msg" id="msg" class="form-control" rows="8" cols="9" placeholder="Your message" [(ngModel)]="msg" required></textarea>
@@ -32,17 +32,17 @@
                </div>
                <button type="submit" class="btn">Send</button>
             </form>
-      
+
          </div>
       </div>
    </div>
 
-   <small id="photoCreds">
+   <!-- <small id="photoCreds">
       Photo by
       <a target="_blank" rel="noopener noreferrer" href="https://unsplash.com/@ayahya09">Ali Yahya</a>
       on
       <a target="_blank" rel="noopener noreferrer" href="https://unsplash.com/">Unsplash</a>
-   </small>
+   </small> -->
 
    <app-footer></app-footer>
 
