@@ -3,7 +3,7 @@ const projects = [
    {
       name: 'VIP Puppies',
       shortDesc: 'web and native apps',
-      link: 'https://vippuppies.com',
+      link: null, // https://vippuppies.com
       image: '~/../assets/images/projects/vipp.jpeg',
       problem: `VIP Puppies needed to migrate from their existing WordPress e-commerce site. They also needed IOS and Android apps.`,
       solution: 'Working with Electron Innovations, I was able to provide web and native apps in a cost effective manner using a shared codebase.'
@@ -17,7 +17,7 @@ const projects = [
    }, {
       name: 'iCare Greetings',
       shortDesc: 'command line interface',
-      link: 'https://icaregreetings.com',
+      link: null, // https://icaregreetings.com
       image: '~/../assets/images/projects/icare.jpg',
       problem: 'iCare Greetings needed a better way to buy postage and combine pdf templates for printing their greeting cards.',
       solution: 'Working with Electron Innovations, I built a cli program to get orders from BigCommerce, purchase and download shipping labels, and combine the card templates and shipping labels into a print ready pdf.'
