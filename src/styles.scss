@@ -5,12 +5,7 @@
 @import './_reset.scss';
 @import './_variables.scss';
 
-
-// #body {
-   /* font-family: 'Montserrat', sans-serif; */
-// }
-
-
+// LAYOUT
 .wrapper {
    padding-top: 100px;
    padding-bottom: 200px;
@@ -19,8 +14,6 @@
    min-height: calc(100vh - 150px);
    margin: 0 auto;
 }
-
-
 
 // COMPONENTS
 .href {
@@ -38,4 +31,21 @@
 .btn.active {
    background: $theme-one-hover;
    color: $theme-four;
+}
+
+// FORMS
+input.ng-valid.ng-touched,
+select.ng-valid.ng-touched,
+textarea.ng-valid.ng-touched {
+   border-left: 4px solid green;
+}
+
+input.ng-invalid.ng-touched,
+select.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+   border-left: 4px solid red;
+}
+
+[disabled] {
+   cursor: not-allowed
 }
