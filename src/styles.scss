@@ -14,6 +14,8 @@
 .wrapper {
    padding-top: 100px;
    padding-bottom: 80px;
+
+   // this makes all pages fill up the view height
    min-height: calc(100vh - 150px);
    margin: 0 auto;
 }
