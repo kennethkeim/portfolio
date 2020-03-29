@@ -1,21 +1,5 @@
 @import '../../../_variables.scss';
 
-
-
-/* FONTS */
-h1 {
-   font-family: 'Lato', sans-serif;
-}
-
-/* COLORS */
-h1 {
-   color: $theme-one;
-}
-
-
-
-
-
 #body {
    background-image:
    linear-gradient(
@@ -26,18 +10,14 @@ h1 {
    background-size: cover;
 }
 
-
-
-
 h1 {
+   color: $theme-one;
    text-align: center;
    font-size: 3.5rem;
    margin-bottom: 20px;
 }
 
-
-
-/* FORM */
+// FORM
 .form-control {
    border: none;
    background: rgba(245,245,245,0.95);
@@ -60,12 +40,7 @@ h1 {
    margin-bottom: 25px;
 }
 
-
-
-
-
-
-/* BUTTON */
+// BUTTON
 .btn {
    display: block;
    width: 150px;
@@ -78,25 +53,20 @@ h1 {
    box-shadow: none;
 }
 
-
-
-/* PHOTO CREDS */
+// PHOTO CREDS
 #photoCreds {
    color: $theme-four;
    position: relative;
    left: calc(100vw - 215px);
 }
 
-
-
-/* media queries */
+// media queries
 @media screen and (max-width:990px) {
    #body { background-position-x: right }
 }
 @media screen and (max-width:707px) {
    #body { background-position-x: center }
 }
-
 @media screen and (max-width:500px) {
    .wrapper { padding-top: 70px; }
 }

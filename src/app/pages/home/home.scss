@@ -1,22 +1,7 @@
 @import '../../../_variables.scss';
 
-
-
-/* FONTS */
-// article p,
-// h3 {
-//    font-family: 'Lato', sans-serif;
-// }
-
-/* COLORS */
 #body {
    color: $theme-four;
-}
-
-
-
-
-#body {
    background:
    url("~/../assets/images/backgrounds/idea.jpg");
    background-size: cover;
@@ -28,11 +13,7 @@
    align-items: center;
 }
 
-
-
-
-
-/* ARTICLE */
+// ARTICLE
 article {
    padding: 0 $body-spc;
    position: relative;
@@ -48,12 +29,7 @@ article {
    }
 }
 
-
-
-
-
-
-/* CONTACT ME BUTTON */
+// CONTACT ME BUTTON
 .btn {
    border-radius: 2px;
    font-weight: 500;
@@ -63,11 +39,7 @@ article {
    box-shadow: none;
 }
 
-
-
-
-
-/* PHOTO CREDS */
+// PHOTO CREDS
 #photoCreds {
    color: $theme-four;
    position: relative;

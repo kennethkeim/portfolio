@@ -1,13 +1,5 @@
 @import '../../../_variables.scss';
 
-
-
-/* FONTS */
-// article {
-   // font-family: 'Lato', sans-serif;
-// }
-
-/* COLORS */
 #body {
    background: $bg-page;
 }
@@ -21,10 +13,7 @@ p {
    color: $theme-four;
 }
 
-
-
-
-/* ARTICLE */
+// ARTICLE
 h2 {
    text-align: center;
    font-size: 2rem;
@@ -35,9 +24,7 @@ p {
    font-size: 1.2rem;
 }
 
-
-
-/* PROFILE PHOTO */
+// PROFILE PHOTO
 img {
    display: block;
    margin: 0 auto 25px auto;

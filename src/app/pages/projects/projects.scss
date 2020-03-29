@@ -1,25 +1,13 @@
 @import '../../../_variables.scss';
 
-
 $cardW: 350px;
 
-/* FONTS */
-// #projects {
-//    font-family: 'Lato', sans-serif;
-// }
-
-/* COLORS */
 #body {
    background: $bg-page;
    color: $theme-four;
 }
 
-
-
-
-
-
-/* PROJECTS */
+// PROJECTS
 #projects {
    display: flex;
    flex-flow: row wrap;
