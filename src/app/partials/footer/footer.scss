@@ -6,20 +6,17 @@ footer {
    background: $main-dark;
    color: $text-footer;
    height: $footerH;
-   padding-top: 35px;
    text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
    a {
       color: $main-light;
-
-      hover {
-         color: rgba(255,236,197,0.7);
-      }
    }
 
-   span {
-      width: 20px;
-      display: inline-block;
+   #linkedin {
+      margin-right: 20px;
    }
    
 }
