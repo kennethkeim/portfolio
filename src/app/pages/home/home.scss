@@ -2,7 +2,7 @@
 
 #body {
    background:
-   url("~/../assets/images/backgrounds/bulb7.jpg");
+   url("~/../assets/images/backgrounds/bulb7_flipped.jpeg");
    background-size: cover;
    background-position: center;
 }
@@ -45,3 +45,11 @@ article {
 //    position: relative;
 //    left: calc(100vw - 260px);
 // }
+
+@media screen and (max-width: 700px) {
+   #body { background-position: right -350px bottom 0px; }
+}
+
+@media screen and (max-width: 600px) {
+   // #body { background-position: right -200px bottom 0px; }
+}
