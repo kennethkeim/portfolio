@@ -2,6 +2,11 @@
 
 $cardW: 350px;
 
+.wrapper {
+   // offset the margin bottom on the bottom row of cards
+   padding-bottom: 125px;
+}
+
 #body {
    background-color: $bg-page;
    color: $text-page;
@@ -22,11 +27,6 @@ $cardW: 350px;
       max-width: $cardW;
       margin: 0 20px 75px 20px;
       text-align: center;
-   }
-
-   .mycard:nth-child(3),
-   .mycard:nth-child(4) {
-      margin-bottom: 0;
    }
 
    img, a, small {
