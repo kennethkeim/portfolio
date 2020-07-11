@@ -6,7 +6,6 @@
       <div class="row justify-content-center no-gutters">
          <div class="col-11 col-lg-7">
             <h1>Contact Me</h1>
-            <app-msgs *ngIf="flash" [msg]="flash"></app-msgs>
 
             <form id="contactForm" (ngSubmit)="onSubmit()" #contactForm="ngForm">
                <div class="row no-gutters">
@@ -31,6 +30,8 @@
                </div>
 
                <p id="redirectNote">Any projects will be re-directed to the startup I work for.</p>
+
+               <app-msgs *ngIf="flash" [msg]="flash"></app-msgs>
 
                <button [disabled]="contactForm.invalid" type="submit" class="btn">Send</button>
             </form>

@@ -5,9 +5,8 @@
 .success,
 .error,
 .processing {
-   padding: 5px;
    border-radius: 1.5px;
-   margin-bottom: 20px;
+   margin-bottom: 10px;
    text-align: center;
 }
 
@@ -20,6 +19,5 @@
 }
 
 .processing {
-   padding: 5px;
    color: green;
 }
