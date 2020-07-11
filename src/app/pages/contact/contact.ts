@@ -14,8 +14,7 @@ export class ContactComponent {
    name: string;
    email: string;
    msg: string;
-   success: string;
-   error: string;
+   flash: { type: 'error' | 'success' | 'processing', text?: string }
 
    constructor(private http: HttpClient) {}
 
@@ -29,11 +28,10 @@ export class ContactComponent {
       };
 
       this.http.post(env.api, body)
-      .subscribe((data: string) => {
-         this.success = data;
+      .subscribe((data: any) => {
+         this.flash = { type: 'success', text: data.message}
       }, (err) => {
-         // I'm getting an error response even if the request was successful
-         this.error = err.error;
+         this.flash = { type: 'error', text: err.error.message }
       });
 
    }

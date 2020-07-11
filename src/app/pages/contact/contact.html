@@ -6,8 +6,7 @@
       <div class="row justify-content-center no-gutters">
          <div class="col-11 col-lg-7">
             <h1>Contact Me</h1>
-            <app-msgs *ngIf="error" [msg]="{type: 'error', text: error}"></app-msgs>
-            <app-msgs *ngIf="success" [msg]="{type: 'success', text: success}"></app-msgs>
+            <app-msgs *ngIf="flash" [msg]="flash"></app-msgs>
 
             <form id="contactForm" (ngSubmit)="onSubmit()">
                <div class="row no-gutters">
