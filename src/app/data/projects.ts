@@ -1,7 +1,7 @@
 
 const featProject = {
    name: 'VIP Puppies',
-   link: null, // https://vippuppies.com
+   link: '', // https://vippuppies.com
    image: '~/../assets/images/projects/vipp.png',
    description: "VIP Puppies is a full service puppy marketplace with integrated payments and financing, in-app messaging, Android and IOS apps, and a blog. I've served as the lead developer on this project for over a year, working for Electron Innovations. I'll add a link here once this project goes live!"
 }
@@ -9,25 +9,16 @@ const featProject = {
 const projects = [
    {
       name: 'Keim Industrial Surplus',
-      shortDesc: 'website',
       link: 'https://keimindustrialsurplus.com',
-      image: '~/../assets/images/projects/keim.png',
-      problem: 'Keim Industrial Surplus asked me to build a small website with some business and contact information.',
-      solution: 'I created a simple one page site, writing everything from scratch in order to deploy quickly with good SEO.',
+      description: 'Simple one page website with with business and contact information.'
    }, {
       name: 'iCare Greetings',
-      shortDesc: 'command line interface',
-      link: null, // https://icaregreetings.com
-      image: '~/../assets/images/projects/icare.jpg',
-      problem: 'iCare Greetings needed a better way to buy postage and combine pdf templates for printing their greeting cards.',
-      solution: 'Working with Electron Innovations, I built a cli program to get orders from BigCommerce, purchase and download shipping labels, and combine the card templates and shipping labels into a print ready pdf.'
+      link: 'https://icaregreetings.com',
+      description: 'Working with Electron Innovations, I developed a backend system to automate fetching orders, buying postage, and combining shipping labels and greeting card templates into a print ready pdf.'
    }, {
       name: 'Abner Henry Fine Furniture',
-      shortDesc: 'backend for inventory page',
       link: 'https://abnerhenry.com/slabs',
-      image: '~/../assets/images/projects/ah.jpg',
-      problem: 'Abner Henry needed a way to dynamically update their inventory from a third party supplier, who kept the inventory list in an excel file.',
-      solution: 'Using the existing systems of the supplier along with modern web technology, I was able to keep the inventory data live in a way that was satisfactory for both Abner Henry and the supplier.'
+      description: 'Abner Henry Fine Furniture needed a way to dynamically update their inventory from a third party supplier, who kept the inventory list in an excel file. I deployed a web server that parses iventory items from the excel file and serves it to their website.'
    }
 ];
 
