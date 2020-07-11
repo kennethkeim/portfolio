@@ -3,19 +3,23 @@
 
 
 .success,
-.error {
-   padding: 15px;
+.error,
+.processing {
+   padding: 5px;
    border-radius: 1.5px;
    margin-bottom: 20px;
    text-align: center;
 }
 
 .success {
-   background: $bg-success;
-   color: $text-success;
+   color: green;
 }
 
 .error {
-   background: $bg-error;
-   color: $text-error;
+   color: red;
+}
+
+.processing {
+   padding: 5px;
+   color: $text-success;
 }

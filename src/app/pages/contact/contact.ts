@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment as env } from '../../../environments/environment';
-
+import { Flash } from "src/app/interfaces/flash"
 
 
 @Component({
@@ -14,7 +14,7 @@ export class ContactComponent {
    name: string;
    email: string;
    msg: string;
-   flash: { type: 'error' | 'success' | 'processing', text?: string }
+   flash: Flash
 
    constructor(private http: HttpClient) {}
 
@@ -26,6 +26,8 @@ export class ContactComponent {
          email: this.email,
          message: this.msg
       };
+
+      this.flash = { type: 'processing', text: null }
 
       this.http.post(env.api, body)
       .subscribe((data: any) => {

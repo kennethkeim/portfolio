@@ -1,0 +1,1 @@
+export interface Flash { type: 'error' | 'success' | 'processing', text?: string }
