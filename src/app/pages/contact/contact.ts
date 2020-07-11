@@ -33,7 +33,7 @@ export class ContactComponent {
       .subscribe((data: any) => {
          this.flash = { type: 'success', text: data.message}
       }, (err) => {
-         this.flash = { type: 'error', text: err.error.message }
+         this.flash = { type: 'error', text: err.error.message || 'Sorry, something went wrong' }
       });
 
    }
