@@ -1,6 +1,7 @@
 @import '../../../_variables.scss';
 
 $cardW: 350px;
+$featProjW: 740px;
 
 .wrapper {
    // offset the margin bottom on the bottom row of cards
@@ -12,45 +13,32 @@ $cardW: 350px;
    color: $text-page;
 }
 
-// PROJECTS
-#projects {
-   display: flex;
-   flex-flow: row wrap;
-   justify-content: center;
-   padding: 20px;
-   max-width: 1000px;
+// FEATURED PROJECT
+#featProject {
+   max-width: $featProjW;
    margin: auto;
 
    .mycard {
-      flex: 0 0 auto;
-      width: 100%;
-      max-width: $cardW;
       margin: 0 20px 75px 20px;
       text-align: center;
-   }
 
-   img, a, small {
-      display: block;
-   }
-
-   img {
-      width: 100%;
-      margin-bottom: 10px;
-      border-radius: 5px;
-   }
-
-   small {
-      margin-bottom: 10px;
-      color: $theme-one;
-      font-size: 1rem;
-   }
-
-   p {
-      text-align: left;
-      margin-bottom: 10px;
-   }
-
-   .proj-name {
-      font-size: 1.4rem;
+      img, a, small, p {
+         display: block;
+         margin: 5px 0;
+      }
+      img {
+         width: 100%;
+         border-radius: 3px;
+      }
+      small {
+         color: $theme-one;
+         font-size: 1rem;
+      }
+      p {
+         text-align: left;
+      }
+      .proj-name {
+         font-size: 1.4rem;
+      }
    }
 }

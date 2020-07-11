@@ -3,29 +3,22 @@
    <app-navbar></app-navbar>
 
    <div class="wrapper">
-      <div id="projects">
 
+      <div id="featProject">
 
-         <div *ngFor="let proj of projects" class="mycard">
-
-            <img [src]="proj.image" alt="photo of a past project">
-
-            <a *ngIf="proj.link; else noLink" target="_blank" rel="noopener noreferrer" [href]="proj.link" class="href proj-name">
-               {{ proj.name }}
-            </a>
-
-            <ng-template #noLink>
-               <div class="proj-name">{{ proj.name }}</div>
-            </ng-template>
-
-            <small>{{ proj.shortDesc }}</small>
-            <p>{{ proj.problem }}</p>
-            <p>{{ proj.solution }}</p>
-
+         <div class="mycard">
+            <img [src]="featProject.image" alt="photo of featured project">
+            <a target="_blank" rel="noopener noreferrer" [href]="featProject.link" class="href proj-name">{{ featProject.name }}</a>
+            <small>{{ featProject.shortDesc }}</small>
+            <p>{{ featProject.problem }}</p>
+            <p>{{ featProject.solution }}</p>
          </div>
 
-
       </div>
+
+      <!-- <div id="projects">
+         <div *ngFor="let proj of projects" class="mycard"></div>
+      </div> -->
    </div>
 
    <app-footer></app-footer>
