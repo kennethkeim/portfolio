@@ -42,11 +42,15 @@ $cardW: 350px;
    small {
       margin-bottom: 10px;
       color: $theme-one;
-      font-size: .9rem;
+      font-size: 1rem;
    }
 
    p {
       text-align: left;
       margin-bottom: 10px;
+   }
+
+   .proj-name {
+      font-size: 1.4rem;
    }
 }

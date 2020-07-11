@@ -10,12 +10,12 @@
 
             <img [src]="proj.image" alt="photo of a past project">
 
-            <a *ngIf="proj.link; else noLink" target="_blank" rel="noopener noreferrer" [href]="proj.link" class="href">
+            <a *ngIf="proj.link; else noLink" target="_blank" rel="noopener noreferrer" [href]="proj.link" class="href proj-name">
                {{ proj.name }}
             </a>
 
             <ng-template #noLink>
-               <div>{{ proj.name }}</div>
+               <div class="proj-name">{{ proj.name }}</div>
             </ng-template>
 
             <small>{{ proj.shortDesc }}</small>
