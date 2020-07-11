@@ -24,7 +24,7 @@ export class ContactComponent {
       const body = {
          name: this.name,
          email: this.email,
-         msg: this.msg
+         message: this.msg
       };
 
       this.http.post(env.api, body)
