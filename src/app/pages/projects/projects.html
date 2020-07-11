@@ -5,19 +5,20 @@
    <div class="wrapper">
 
       <div id="featProject">
-
          <div class="mycard">
             <img [src]="featProject.image" alt="photo of featured project">
-            <!-- <a target="_blank" rel="noopener noreferrer" [href]="featProject.link" class="href proj-name">{{ featProject.name }}</a> -->
-            <p class="proj-name">{{featProject.name}}</p>
+            <h3><a target="_blank" rel="noopener noreferrer" [href]="featProject.link" class="href">{{ featProject.name }}</a></h3>
             <p>{{ featProject.description }}</p>
          </div>
-
       </div>
 
-      <!-- <div id="projects">
-         <div *ngFor="let proj of projects" class="mycard"></div>
-      </div> -->
+      <div id="projects">
+         <h2>More Projects</h2>
+         <div *ngFor="let proj of projects" class="mycard">
+            <h3><a target="_blank" rel="noopener noreferrer" [href]="proj.link" class="href">{{proj.name}}</a></h3>
+            <p>{{proj.description}}</p>
+         </div>
+      </div>
    </div>
 
    <app-footer></app-footer>
