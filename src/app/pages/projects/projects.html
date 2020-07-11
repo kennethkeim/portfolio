@@ -8,10 +8,9 @@
 
          <div class="mycard">
             <img [src]="featProject.image" alt="photo of featured project">
-            <a target="_blank" rel="noopener noreferrer" [href]="featProject.link" class="href proj-name">{{ featProject.name }}</a>
-            <small>{{ featProject.shortDesc }}</small>
-            <p>{{ featProject.problem }}</p>
-            <p>{{ featProject.solution }}</p>
+            <!-- <a target="_blank" rel="noopener noreferrer" [href]="featProject.link" class="href proj-name">{{ featProject.name }}</a> -->
+            <p class="proj-name">{{featProject.name}}</p>
+            <p>{{ featProject.description }}</p>
          </div>
 
       </div>

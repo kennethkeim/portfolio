@@ -1,11 +1,9 @@
 
 const featProject = {
    name: 'VIP Puppies',
-   shortDesc: 'web and native apps',
    link: null, // https://vippuppies.com
    image: '~/../assets/images/projects/vipp.png',
-   problem: `VIP Puppies needed to migrate from their existing WordPress e-commerce site. They also needed IOS and Android apps.`,
-   solution: 'Working with Electron Innovations, I was able to provide web and native apps in a cost effective manner using a shared codebase.'
+   description: "VIP Puppies is a full service puppy marketplace with integrated payments and financing, in-app messaging, Android and IOS apps, and a blog. I've served as the lead developer on this project for over a year, working for Electron Innovations. I'll add a link here once this project goes live!"
 }
 
 const projects = [
