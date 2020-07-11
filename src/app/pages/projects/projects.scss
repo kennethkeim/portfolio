@@ -6,6 +6,8 @@ $featProjW: 740px;
 .wrapper {
    // offset the margin bottom on the bottom row of cards
    padding-bottom: 125px;
+   padding-left: 40px;
+   padding-right: 40px;
 }
 
 #body {
@@ -40,5 +42,12 @@ $featProjW: 740px;
          font-size: 1.4rem;
          margin-bottom: 0;
       }
+   }
+}
+
+@media screen and (max-width:500px) {
+   .wrapper {
+      padding-left: $body-spc;
+      padding-right: $body-spc;
    }
 }
