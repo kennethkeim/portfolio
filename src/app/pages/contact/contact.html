@@ -8,7 +8,7 @@
             <h1>Contact Me</h1>
             <app-msgs *ngIf="flash" [msg]="flash"></app-msgs>
 
-            <form id="contactForm" (ngSubmit)="onSubmit()">
+            <form id="contactForm" (ngSubmit)="onSubmit()" #contactForm="ngForm">
                <div class="row no-gutters">
                   <div class="col-sm-6">
                      <div class="mr-sm-2">
@@ -20,7 +20,7 @@
                   <div class="col-sm-6">
                      <div class="ml-sm-2">
                         <label for="email" class="sr-only">Email</label>
-                        <input type="email" name="email" id="email" class="form-control" placeholder="Your email" [(ngModel)]="email" required>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Your email" [(ngModel)]="email" required email>
                      </div>
                   </div>
 
@@ -32,7 +32,7 @@
 
                <p id="redirectNote">Any projects will be re-directed to the startup I work for.</p>
 
-               <button type="submit" class="btn">Send</button>
+               <button [disabled]="contactForm.invalid" type="submit" class="btn">Send</button>
             </form>
 
          </div>

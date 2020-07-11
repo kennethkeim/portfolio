@@ -39,6 +39,9 @@ h1 {
    margin: auto;
    border-radius: 2px;
    font-weight: 500;
+   &:disabled {
+      cursor: not-allowed;
+   }
 }
 .btn:hover,
 .btn.active {
