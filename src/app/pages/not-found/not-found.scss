@@ -1,0 +1,14 @@
+@import '../../../_variables.scss';
+
+#body {
+   background-color: $bg-page;
+   color: $text-page;
+   text-align: center;
+}
+
+a {
+   display: block;
+   margin-top: 15px;
+   text-decoration: underline;
+   color: $theme-one;
+}
