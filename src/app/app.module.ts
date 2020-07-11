@@ -12,6 +12,7 @@ import { ProjectsComponent } from './pages/projects/projects';
 import { NavbarComponent } from './partials/navbar/navbar';
 import { FooterComponent } from './partials/footer/footer';
 import { MsgsComponent } from './partials/msgs/msgs';
+import { NotFoundComponent } from './not-found/not-found';
 
 @NgModule({
    declarations: [
@@ -22,7 +23,8 @@ import { MsgsComponent } from './partials/msgs/msgs';
       ProjectsComponent,
       NavbarComponent,
       FooterComponent,
-      MsgsComponent
+      MsgsComponent,
+      NotFoundComponent
    ],
    imports: [
       BrowserModule,
