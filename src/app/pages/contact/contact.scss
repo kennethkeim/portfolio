@@ -1,14 +1,6 @@
 @import '../../../_variables.scss';
 
 #body {
-   // background-image:
-   // linear-gradient(
-   //   rgba(0, 0, 0, 0.1),
-   //   rgba(0, 0, 0, 0.1)
-   // ),
-   // url("~/../assets/images/backgrounds/writing1.jpg");
-   // background-size: cover;
-
    background-color: $bg-page;
 }
 
@@ -22,14 +14,7 @@ h1 {
 // FORM
 .form-control {
    border: none;
-   // background: rgba(245,245,245,0.95);
    border-radius: 2px;
-   box-shadow: none;
-}
-.form-control:focus,
-.form-control:hover {
-   border: none;
-   background: rgba(245,245,245,1);
    box-shadow: none;
 }
 
@@ -61,12 +46,6 @@ h1 {
 }
 
 // media queries
-@media screen and (max-width:990px) {
-   #body { background-position-x: right }
-}
-@media screen and (max-width:707px) {
-   #body { background-position-x: center }
-}
 @media screen and (max-width:500px) {
    .wrapper { padding-top: 70px; }
 }
