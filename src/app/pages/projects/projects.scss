@@ -3,6 +3,19 @@
 $cardW: 350px;
 $featProjW: 740px;
 
+
+
+
+// temporary
+.fake-href {
+   color: $text-href;
+   &:hover {color: $text-href;}
+}
+
+
+
+
+
 .wrapper {
    // offset the margin bottom on the bottom row of cards
    padding-bottom: 125px;

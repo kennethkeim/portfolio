@@ -1,7 +1,7 @@
 
 const featProject = {
    name: 'VIP Puppies',
-   link: '', // https://vippuppies.com
+   link: 'https://vippuppies.com',
    image: '~/../assets/images/vipp-sm.png',
    description: "VIP Puppies is a full-service puppy marketplace with integrated payments and financing, in-app messaging, Android and IOS apps, and a blog. I've served as the lead developer on this project for over a year, working for Electron Innovations. I'll add a link here once this project goes live!"
 }
