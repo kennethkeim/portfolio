@@ -12,6 +12,10 @@
   },
   "private": false,
   "license": "UNLICENSED",
+  "author": {
+    "name": "Kenneth Keim",
+    "url": "https://kennethkeim.com"
+  },
   "dependencies": {
     "@angular/animations": "^14.1.0",
     "@angular/common": "^14.1.0",
