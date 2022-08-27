@@ -8,9 +8,7 @@ module.exports = {
    jsxSingleQuote: false,
    trailingComma: "none",
    bracketSpacing: true,
-   // fingers crossed
-   // https://github.com/prettier/prettier/issues/5377#issuecomment-678644985
-   // bracketSameLine: true,
+   bracketSameLine: true,
    arrowParens: "always",
    rangeStart: 0,
    proseWrap: "preserve",
