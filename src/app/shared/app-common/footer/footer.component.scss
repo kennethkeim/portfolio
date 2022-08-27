@@ -1,0 +1,19 @@
+@import "src/scss/_variables.scss";
+
+footer {
+   background: $bg-footer;
+   color: $text-footer;
+   height: $footerH;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   a {
+      color: $theme-four;
+   }
+
+   #linkedin {
+      margin-right: 20px;
+   }
+}
