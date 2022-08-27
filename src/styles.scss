@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./scss/_typography.scss";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~normalize.css/normalize.css";
+@import "./scss/_reset.scss";
+@import "./scss/_variables.scss";
+
+// LAYOUT
+.wrapper {
+   padding-top: 100px;
+   padding-bottom: 200px;
+
+   // this makes all pages fill up the view height
+   min-height: calc(100vh - 150px);
+   margin: 0 auto;
+}
+
+// COMPONENTS
+.href {
+   color: $text-href;
+}
+.href:hover {
+   color: $text-href-hover;
+}
+
+.btn {
+   background: $theme-one;
+   color: $theme-four;
+}
+.btn:hover,
+.btn.active {
+   background: $theme-one-hover;
+   color: $theme-four;
+}
+
+// FORMS
+input.ng-valid.ng-touched,
+select.ng-valid.ng-touched,
+textarea.ng-valid.ng-touched {
+   border-left: 4px solid green;
+}
+
+input.ng-invalid.ng-touched,
+select.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+   border-left: 4px solid red;
+}
+
+[disabled] {
+   cursor: not-allowed;
+}

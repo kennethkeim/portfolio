@@ -1,0 +1,28 @@
+
+// BASE THEME
+$theme-one: #F44336;
+$theme-one-hover: #c8372d;
+$theme-two: #3F51B5;
+$theme-three: #111;
+$theme-four: #fff;
+// $bg-navbar:
+$text-navbar: $theme-four;
+$bg-footer: $theme-two;
+$text-footer: $theme-four;
+$bg-page: $theme-three;
+$text-page: $theme-four;
+
+// MORE STUFF
+$text-error: #721C23;
+$bg-error: #FFcbcb;
+$text-success: #216130;
+$bg-success: #D4EDDA;
+$text-href: #007bff;
+$text-href-hover: #0056b3;
+
+$width-md: 600px;
+$body-spc: 15px;
+
+// update .wrapper min height if changing this
+$footerH: 100px;
+$navbarH: 50px;
