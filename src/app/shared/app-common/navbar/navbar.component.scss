@@ -1,0 +1,41 @@
+@import "src/scss/_variables.scss";
+
+header {
+   height: $navbarH;
+}
+
+nav a {
+   color: $text-navbar;
+}
+nav a:hover,
+nav a.active {
+   color: $text-navbar;
+   border-bottom: 3px solid $theme-one;
+}
+
+nav {
+   text-align: right;
+   border-radius: 1px;
+   height: $navbarH;
+}
+
+nav div {
+   display: inline-block;
+}
+
+nav > a:first-child {
+   float: left;
+   font-size: 1.2rem;
+   font-weight: 500;
+}
+
+nav a {
+   text-decoration: none;
+   margin: 0 $body-spc 0 $body-spc;
+   padding: 6px 0 3px 0;
+   display: inline-block;
+}
+nav a:hover,
+nav a.active {
+   text-decoration: none;
+}
