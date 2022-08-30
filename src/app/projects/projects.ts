@@ -1,12 +1,4 @@
-interface Project {
-   name: string
-   link: string
-   description: string
-}
-
-interface FeatProject extends Project {
-   image: string
-}
+import { FeatProject, Project } from "./project.model"
 
 const featProject: FeatProject = {
    name: "VIP Puppies",
