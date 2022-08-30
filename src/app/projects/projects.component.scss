@@ -1,0 +1,63 @@
+@import "src/scss/_variables.scss";
+
+$cardW: 350px;
+$featProjW: 740px;
+
+// temporary
+.fake-href {
+   color: $text-href;
+   &:hover {
+      color: $text-href;
+   }
+}
+
+.wrapper {
+   // offset the margin bottom on the bottom row of cards
+   padding-bottom: 125px;
+   padding-left: 40px;
+   padding-right: 40px;
+}
+
+#body {
+   background-color: $bg-page;
+   color: $text-page;
+}
+
+.featProject,
+.projects {
+   max-width: $featProjW;
+   margin: auto;
+}
+
+h2 {
+   margin: 40px 0 20px 0;
+   color: $theme-one;
+   text-align: center;
+   font-size: 1.8rem;
+   font-weight: 700;
+}
+
+.mycard {
+   margin-bottom: 20px;
+   img,
+   h3,
+   p {
+      display: block;
+      margin: 5px 0;
+   }
+   img {
+      width: 100%;
+      border-radius: 2px;
+   }
+   h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .wrapper {
+      padding-left: $body-spc;
+      padding-right: $body-spc;
+   }
+}
