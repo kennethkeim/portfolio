@@ -30,6 +30,7 @@ module.exports = {
                   style: "kebab-case"
                }
             ],
+            "@angular-eslint/no-empty-lifecycle-method": ["off"],
             curly: ["warn", "multi-line", "consistent"],
             eqeqeq: "error",
             // git on windows checks out CRLF and commits LF
