@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
+    "format-app": "prettier ./src/app --write",
     "deploy:prod": "git checkout prod && git merge main && git push && git checkout main"
   },
   "private": false,
