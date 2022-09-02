@@ -2,12 +2,13 @@
 
 .projectCard {
    margin-bottom: 20px;
+   max-width: 700px;
 }
 
 .name,
 .description {
    display: block;
-   margin: 5px 0;
+   margin: 10px 0;
 }
 
 .name {
@@ -25,11 +26,12 @@
       font-size: 0.8rem;
       padding: 1px 6px;
    }
-}
 
-.tagRowWithLinks {
-   > * {
-      font-size: 0.7rem;
+   .role,
+   .type,
+   .length {
+      background-color: #ffd9ce;
+      color: $theme-three;
    }
 
    a {
@@ -45,13 +47,4 @@
    .material-symbols-outlined {
       font-size: 1rem;
    }
-}
-
-.role {
-   background-color: $theme-one;
-}
-
-.type,
-.length {
-   background-color: $theme-two;
 }

@@ -9,9 +9,6 @@
       <p class="role">{{ project.role }}</p>
       <p class="type">{{ project.type }}</p>
       <p class="length">{{ project.length }}</p>
-   </div>
-
-   <div class="tagRow tagRowWithLinks">
       <a
          *ngFor="let link of project.links"
          target="_blank"
