@@ -4,13 +4,54 @@
    margin-bottom: 20px;
 }
 
-h3,
-p {
+.name,
+.description {
    display: block;
    margin: 5px 0;
 }
 
-h3 {
+.name {
    font-size: 1.4rem;
    margin-bottom: 0;
+}
+
+.tagRow {
+   display: flex;
+   flex-wrap: wrap;
+
+   > * {
+      color: $theme-four;
+      margin: 0 10px 10px 0;
+      font-size: 0.8rem;
+      padding: 1px 6px;
+   }
+}
+
+.tagRowWithLinks {
+   > * {
+      font-size: 0.7rem;
+   }
+
+   a {
+      display: flex;
+      align-items: center;
+      background-color: $theme-two;
+   }
+
+   a:hover {
+      text-decoration: none;
+   }
+
+   .material-symbols-outlined {
+      font-size: 1rem;
+   }
+}
+
+.role {
+   background-color: $theme-one;
+}
+
+.type,
+.length {
+   background-color: $theme-two;
 }

@@ -2,12 +2,7 @@
    <app-navbar></app-navbar>
 
    <div class="wrapper">
-      <div class="featProject">
-         <app-project [project]="featProject"></app-project>
-      </div>
-
       <div class="projects">
-         <h2>More Projects</h2>
          <app-project *ngFor="let project of projects" [project]="project"></app-project>
       </div>
    </div>
