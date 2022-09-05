@@ -32,11 +32,17 @@ h2 {
    margin-bottom: 15px;
 }
 
-p {
+p,
+.labels {
    max-width: 700px;
-   margin-bottom: 12px;
+}
+
+.labels {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
 }
 
 app-label {
-   margin: 0 10px 10px 0;
+   margin-right: 7px;
 }

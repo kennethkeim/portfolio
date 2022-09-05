@@ -10,40 +10,38 @@
 
             <p>
                I love building things for the internet. When I'm not doing that, I'm
-               <app-label *ngFor="let hobby of hobbies" size="sm" type="secondary">
-                  {{ hobby }}
-               </app-label>
+               <app-label *ngFor="let hobby of hobbies" size="sm" type="secondary">{{
+                  hobby
+               }}</app-label>
             </p>
          </section>
 
          <section>
             <h2>Technologies I Use</h2>
 
-            <p>
-               I mostly use
-               <br />
+            <p>I mostly use</p>
+            <div class="labels mb-4">
                <app-label *ngFor="let skill of mainSkills" type="dark" size="sm">
                   {{ skill }}
                </app-label>
-            </p>
+            </div>
 
-            <p>
-               But also
-               <br />
+            <p>But also</p>
+            <div class="labels">
                <app-label *ngFor="let skill of otherSkills" type="dark" size="sm">
                   {{ skill }}
                </app-label>
-            </p>
+            </div>
          </section>
 
          <section>
             <h2>Stuff I've Built</h2>
 
-            <p class="mb-4">
+            <div class="labels mb-4">
                <app-label *ngFor="let project of projects" type="dark" size="sm">
                   {{ project.name }}
                </app-label>
-            </p>
+            </div>
 
             <app-routerlink url="/work">Check out my work!</app-routerlink>
          </section>
