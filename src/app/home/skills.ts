@@ -10,6 +10,7 @@ export const mainSkills: string[] = [
    "Angular",
    "Nx",
    "RxJS",
+   "Bootstrap",
 
    // databases
    "Firestore"
@@ -26,6 +27,7 @@ export const otherSkills: string[] = [
    "Socket.io",
    "Passport.js",
    "Stripe",
+   "Angular Material",
 
    // databases
    "MongoDB",
