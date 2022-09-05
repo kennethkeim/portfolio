@@ -2,6 +2,8 @@
 
 figure {
    width: 340px;
+   // layout element height should be close to final height before image loads
+   min-height: 340px;
 }
 
 img {
