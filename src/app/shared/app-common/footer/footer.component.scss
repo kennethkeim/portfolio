@@ -10,8 +10,12 @@ footer {
    align-items: center;
 }
 
-app-href:nth-child(1) {
+app-href {
    margin-right: 30px;
+
+   &:last-child {
+      margin-right: 0;
+   }
 }
 
 .copyrightText {

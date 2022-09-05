@@ -19,6 +19,10 @@ export class FooterComponent {
       {
          text: "GitHub",
          url: "https://github.com/kennethkeim"
+      },
+      {
+         text: "Contact Me",
+         url: "mailto:kkeim77@gmail.com"
       }
    ]
 
