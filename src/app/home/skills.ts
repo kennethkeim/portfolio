@@ -25,6 +25,7 @@ export const otherSkills: string[] = [
    "Express",
    "Socket.io",
    "Passport.js",
+   "Stripe",
 
    // databases
    "MongoDB",
