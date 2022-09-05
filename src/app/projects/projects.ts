@@ -9,9 +9,9 @@ import { Project } from "./project.model"
 
 export const projects: Project[] = [
    {
-      name: "Production Line ERP",
+      name: "Production Line Mfg Software",
       description:
-         "Integrate with QuickBooks and manage the production of cabinetry parts for the RV industry.",
+         "Integrate with QuickBooks and manage the production of cabinetry parts for the RV industry. All updates are synced accross the factory in realtime.",
       type: "Fullstack",
       role: "Lead Architect",
       length: ">1 year",
@@ -20,7 +20,7 @@ export const projects: Project[] = [
    {
       name: "Puppy Marketplace",
       description:
-         "VIP Puppies is a full-service puppy marketplace with integrated payments and financing, in-app messaging, Android and iOS apps, and a blog.",
+         "Full-service puppy marketplace with integrated payments and financing, in-app messaging, Android and iOS apps, and a blog. Breeder screening and escrow-like functionality to help with scam prevention.",
       type: "Fullstack",
       role: "Lead Architect",
       length: ">1 year",
@@ -37,7 +37,7 @@ export const projects: Project[] = [
    {
       name: "NetSuite Time Tracking Integration",
       description:
-         "Integrate with an IconTime time clock and NetSuite. Admin dashboard for users to approve time entries.",
+         "Integrate with an IconTime time clock and NetSuite. Supervisors can review and approve time entries before sending them to NetSuite.",
       type: "Fullstack",
       role: "Architect/Advisor",
       length: "3-6 months",
@@ -61,16 +61,6 @@ export const projects: Project[] = [
       ]
    },
    {
-      name: "Contact/Home Page",
-      description: "Simple one page website with with business and contact information.",
-      type: "Frontend",
-      role: "Sole Developer",
-      length: "<1 month",
-      links: [
-         { type: "page", url: "https://keimindustrialsurplus.com", text: "Home Page" }
-      ]
-   },
-   {
       name: "Print-Ready PDF Generation",
       description:
          "Backend system to automate fetching orders from BigCommerce, buying postage, and combining shipping labels and greeting card templates into a print-ready pdf.",
@@ -82,7 +72,7 @@ export const projects: Project[] = [
    {
       name: "Excel -> REST API",
       description:
-         "Abner Henry Fine Furniture needed a way to dynamically update their inventory from a third party supplier, who kept the inventory list in an excel file. I built and deployed a REST API that parses inventory items from the excel file and serves it to my frontend.",
+         "Parse inventory items from a third party supplier's excel file and serve it on a REST API for my frontend.",
       type: "Fullstack",
       role: "Sole Developer",
       length: "3-6 months",
@@ -91,7 +81,7 @@ export const projects: Project[] = [
    {
       name: "Bakery Production",
       description:
-         "Somewhere in northern Ohio, a bakery puts out hundreds of pies a day. Made more efficient by yours truly. ;)",
+         "Pull orders from WooCommerce and summarize data needed for the production of the bakery items.",
       type: "Fullstack",
       role: "Sole Developer",
       length: "<1 month",
@@ -102,6 +92,16 @@ export const projects: Project[] = [
             text: "Blog Post"
          },
          { type: "video", url: "https://youtu.be/e4UvsMNMms4", text: "Video" }
+      ]
+   },
+   {
+      name: "Contact/Home Page",
+      description: "Simple one page website with with business and contact information.",
+      type: "Frontend",
+      role: "Sole Developer",
+      length: "<1 month",
+      links: [
+         { type: "page", url: "https://keimindustrialsurplus.com", text: "Home Page" }
       ]
    }
 ]
