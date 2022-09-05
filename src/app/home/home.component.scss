@@ -1,24 +1,21 @@
 @import "src/scss/_variables.scss";
 
+.row {
+   width: 100%;
+}
+
 figure {
-   width: 340px;
    // layout element height should be close to final height before image loads
-   min-height: 340px;
+   min-height: 250px;
+   display: flex;
+   justify-content: flex-end;
 }
 
 img {
    width: 100%;
-   margin-bottom: 10px;
+   margin-bottom: 20px;
+   max-width: 400px;
    object-fit: cover;
-}
-
-figcaption {
-   font-size: 0.8rem;
-   color: $secondary;
-}
-
-main {
-   margin-left: 50px;
 }
 
 section {

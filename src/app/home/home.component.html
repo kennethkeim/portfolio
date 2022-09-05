@@ -1,53 +1,54 @@
-<app-page yAlign="center" xAlign="center">
-   <figure>
-      <img src="~/../assets/images/profile-bw-sq-optimized.jpg" alt="Photo of me" />
-      <figcaption>A photo of me that's not even that awkward.</figcaption>
-   </figure>
+<app-page yAlign="center">
+   <div class="row align-items-center justify-content-center">
+      <figure class="col-10 col-sm-8 col-md-6 col-xl-4 col-xxl-3">
+         <img src="~/../assets/images/profile-bw-sq-optimized.jpg" alt="Photo of me" />
+      </figure>
 
-   <main>
-      <section>
-         <h1 class="mt-0">Hi, I'm Kenny</h1>
+      <main class="col-12 col-lg-6">
+         <section>
+            <h1 class="mt-0">Hi, I'm Kenny</h1>
 
-         <p class="tags">
-            I love building things for the internet. When I'm not doing that, I'm
-            <app-label *ngFor="let hobby of hobbies" size="sm" type="secondary">{{
-               hobby
-            }}</app-label>
-         </p>
+            <p>
+               I love building things for the internet. When I'm not doing that, I'm
+               <app-label *ngFor="let hobby of hobbies" size="sm" type="secondary">
+                  {{ hobby }}
+               </app-label>
+            </p>
 
-         <p>Enough about me. Wait no, this is all about me.</p>
-      </section>
+            <p>Enough about me. Wait no, this is all about me.</p>
+         </section>
 
-      <section>
-         <h2>Technologies I Use</h2>
+         <section>
+            <h2>Technologies I Use</h2>
 
-         <p>
-            I mostly use
-            <br />
-            <app-label *ngFor="let skill of mainSkills" type="dark" size="sm">{{
-               skill
-            }}</app-label>
-         </p>
+            <p>
+               I mostly use
+               <br />
+               <app-label *ngFor="let skill of mainSkills" type="dark" size="sm">
+                  {{ skill }}
+               </app-label>
+            </p>
 
-         <p>
-            But also
-            <br />
-            <app-label *ngFor="let skill of otherSkills" type="dark" size="sm">{{
-               skill
-            }}</app-label>
-         </p>
-      </section>
+            <p>
+               But also
+               <br />
+               <app-label *ngFor="let skill of otherSkills" type="dark" size="sm">
+                  {{ skill }}
+               </app-label>
+            </p>
+         </section>
 
-      <section>
-         <h2>Stuff I've Built</h2>
+         <section>
+            <h2>Stuff I've Built</h2>
 
-         <p>
-            <app-label *ngFor="let project of projects" type="dark" size="sm">{{
-               project.name
-            }}</app-label>
-         </p>
+            <p class="mb-4">
+               <app-label *ngFor="let project of projects" type="dark" size="sm">
+                  {{ project.name }}
+               </app-label>
+            </p>
 
-         <app-routerlink url="/work">Check out my work!</app-routerlink>
-      </section>
-   </main>
+            <app-routerlink url="/work">Check out my work!</app-routerlink>
+         </section>
+      </main>
+   </div>
 </app-page>
