@@ -1,11 +1,11 @@
 <!-- footer -->
 <footer>
    <div>
-      <app-href *ngFor="let link of links" [url]="link.url" type="light">{{
-         link.text
-      }}</app-href>
-
-      <br />
+      <div class="mb-1">
+         <app-href *ngFor="let link of links" [url]="link.url" type="light">{{
+            link.text
+         }}</app-href>
+      </div>
       <p>
          <span class="copyrightSymbol">&copy;</span>
          <span class="copyrightText"> {{ thisYear }} </span>
