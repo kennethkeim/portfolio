@@ -9,6 +9,10 @@ const routes: Routes = [
    },
    {
       path: "projects",
+      redirectTo: "work"
+   },
+   {
+      path: "work",
       loadChildren: () =>
          import("./projects/projects.module").then((m) => m.ProjectsModule)
    },

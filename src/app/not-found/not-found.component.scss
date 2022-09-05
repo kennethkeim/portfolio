@@ -1,18 +1,5 @@
-@import "src/scss/_variables.scss";
+// @import "src/scss/_variables.scss";
 
-#body {
-   background-color: $bg-page;
-   color: $text-page;
+main {
    text-align: center;
-}
-
-a {
-   display: block;
-   margin-top: 15px;
-   text-decoration: underline;
-   color: $theme-one;
-}
-
-code {
-   font-size: 0.95rem;
 }

@@ -1,23 +1,15 @@
 <!-- footer -->
 <footer>
    <div>
-      <a
-         target="_blank"
-         rel="noopener noreferrer"
-         href="https://www.linkedin.com/in/kenneth-keim-4b055214a/"
-         id="linkedin"
-         class="href"
-         >LinkedIn</a
-      >
-      <a
-         target="_blank"
-         rel="noopener noreferrer"
-         href="https://github.com/kennethkeim"
-         id="github"
-         class="href"
-         >GitHub</a
-      >
+      <app-href *ngFor="let link of links" [url]="link.url" type="light">{{
+         link.text
+      }}</app-href>
+
       <br />
-      <small>Kenneth Keim &copy; {{ thisYear }}</small>
+      <p>
+         <span class="copyrightSymbol">&copy;</span>
+         <span class="copyrightText"> {{ thisYear }} </span>
+         <span class="copyrightText">Kenneth Keim</span>
+      </p>
    </div>
 </footer>

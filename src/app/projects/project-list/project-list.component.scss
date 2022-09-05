@@ -1,28 +1,5 @@
-@import "src/scss/_variables.scss";
+// @import "src/scss/_variables.scss";
 
-$cardW: 350px;
-$featProjW: 740px;
-
-.wrapper {
-   // offset the margin bottom on the bottom row of cards
-   padding-bottom: 125px;
-   padding-left: 40px;
-   padding-right: 40px;
-}
-
-#body {
-   background-color: $bg-page;
-   color: $text-page;
-}
-
-.projects {
-   max-width: $featProjW;
-   margin: auto;
-}
-
-@media screen and (max-width: 500px) {
-   .wrapper {
-      padding-left: $body-spc;
-      padding-right: $body-spc;
-   }
+main {
+   max-width: 740px;
 }

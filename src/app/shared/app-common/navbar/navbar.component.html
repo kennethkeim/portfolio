@@ -1,9 +1,12 @@
-<!-- nav bar -->
 <header>
    <nav>
-      <a routerLink="/">KENNETH KEIM</a>
-      <div>
-         <a routerLinkActive="active" routerLink="/projects">PROJECTS</a>
-      </div>
+      <a
+         routerLinkActive="active"
+         [routerLinkActiveOptions]="{ exact: true }"
+         routerLink="/"
+         >Kenneth Keim</a
+      >
+      <a routerLinkActive="active" routerLink="/work">Work</a>
+      <a routerLinkActive="active" routerLink="/contact">Contact</a>
    </nav>
 </header>

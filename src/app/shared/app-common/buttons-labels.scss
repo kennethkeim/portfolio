@@ -1,0 +1,32 @@
+@import "src/scss/_variables.scss";
+
+.app-btn,
+.app-label {
+   color: $light;
+
+   &.sm {
+      padding: 1px 6px;
+      font-size: 0.8rem;
+   }
+
+   &.md {
+      padding: 3px 6px;
+   }
+
+   &.primary {
+      background-color: $primary-bright-dark;
+   }
+
+   &.secondary {
+      background-color: $secondary;
+   }
+
+   &.dark {
+      background-color: $dark;
+   }
+
+   &.light {
+      background-color: $light;
+      color: $dark;
+   }
+}

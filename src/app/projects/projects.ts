@@ -14,15 +14,17 @@ export const projects: Project[] = [
          "Integrate with QuickBooks and manage the production of cabinetry parts for the RV industry.",
       type: "Fullstack",
       role: "Lead Architect",
-      length: ">1 year"
+      length: ">1 year",
+      showOnHomePage: true
    },
    {
-      name: "VIP Puppies",
+      name: "Puppy Marketplace",
       description:
          "VIP Puppies is a full-service puppy marketplace with integrated payments and financing, in-app messaging, Android and iOS apps, and a blog.",
       type: "Fullstack",
       role: "Lead Architect",
       length: ">1 year",
+      showOnHomePage: true,
       links: [
          {
             type: "page",
@@ -33,12 +35,13 @@ export const projects: Project[] = [
       ]
    },
    {
-      name: "Time Tracking Integration",
+      name: "NetSuite Time Tracking Integration",
       description:
          "Integrate with an IconTime time clock and NetSuite. Admin dashboard for users to approve time entries.",
       type: "Fullstack",
       role: "Architect/Advisor",
-      length: "3-6 months"
+      length: "3-6 months",
+      showOnHomePage: true
    },
    {
       name: "Wellness Tracking for International First Responders",
@@ -47,6 +50,7 @@ export const projects: Project[] = [
       type: "Fullstack",
       role: "Lead Architect",
       length: "6-12 months",
+      showOnHomePage: true,
       links: [
          {
             type: "page",
@@ -72,7 +76,8 @@ export const projects: Project[] = [
          "Backend system to automate fetching orders from BigCommerce, buying postage, and combining shipping labels and greeting card templates into a print-ready pdf.",
       type: "Backend",
       role: "Sole Developer",
-      length: "1-3 months"
+      length: "1-3 months",
+      showOnHomePage: true
    },
    {
       name: "Excel -> REST API",
@@ -80,7 +85,8 @@ export const projects: Project[] = [
          "Abner Henry Fine Furniture needed a way to dynamically update their inventory from a third party supplier, who kept the inventory list in an excel file. I built and deployed a REST API that parses inventory items from the excel file and serves it to my frontend.",
       type: "Fullstack",
       role: "Sole Developer",
-      length: "3-6 months"
+      length: "3-6 months",
+      showOnHomePage: true
    },
    {
       name: "Bakery Production",

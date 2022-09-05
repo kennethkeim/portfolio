@@ -1,9 +1,5 @@
 // https://medium.com/@elad/normalize-css-or-css-reset-9d75175c5d1e
 
-html {
-   font-size: 18px;
-}
-
 body {
    // original author of this snippet:
    // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -12,8 +8,25 @@ body {
    // Github:
    // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
-   font-family: "Lato", sans-serif;
+   font-family: "Roboto Mono", monospace;
    font-weight: 400;
+   font-size: 18px;
+   letter-spacing: 0rem;
    // line-height: 1.3;
-   color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: 600;
+}
+
+// https://css-tricks.com/tips-aligning-icons-text/
+// may have to split this into classes per icon
+.material-symbols-outlined {
+   position: relative;
+   top: 3px;
 }

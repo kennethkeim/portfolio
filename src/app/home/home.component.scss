@@ -1,31 +1,43 @@
 @import "src/scss/_variables.scss";
 
-#body {
-   background-color: $bg-page;
+figure {
+   width: 340px;
 }
 
+img {
+   width: 100%;
+   margin-bottom: 10px;
+   object-fit: cover;
+}
+
+figcaption {
+   font-size: 0.8rem;
+   color: $secondary;
+}
+
+main {
+   margin-left: 50px;
+}
+
+section {
+   margin-bottom: 30px;
+
+   &:last-child {
+      margin-bottom: 0;
+   }
+}
+
+h1,
 h2 {
-   color: $theme-one;
-   margin-top: 20px;
+   font-size: 2rem;
+   margin-bottom: 15px;
 }
 
 p {
-   color: $text-page;
+   max-width: 700px;
+   margin-bottom: 12px;
 }
 
-// ARTICLE
-h2 {
-   text-align: center;
-   font-size: 1.8rem;
-   font-weight: 700;
-}
-
-// PROFILE PHOTO
-img {
-   display: block;
-   margin: 0 auto 25px auto;
-   width: 240px;
-   height: 240px;
-   object-fit: cover;
-   border-radius: 50%;
+app-label {
+   margin: 0 10px 10px 0;
 }

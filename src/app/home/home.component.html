@@ -1,51 +1,53 @@
-<div id="body">
-   <app-navbar></app-navbar>
+<app-page yAlign="center" xAlign="center">
+   <figure>
+      <img src="~/../assets/images/profile.jpg" alt="Photo of me" />
+      <figcaption>A photo of me that's not even that awkward.</figcaption>
+   </figure>
 
-   <div class="container wrapper">
-      <img src="~/../assets/images/profile.png" alt="profile photo" />
+   <main>
+      <section>
+         <h1 class="mt-0">Hi, I'm Kenny</h1>
 
-      <div class="row justify-content-center no-gutters">
-         <article class="col-11 col-md-10 col-lg-8">
-            <h2>About Me</h2>
-            <p>
-               Hi, I'm Kenneth.<br />
-               I live in Lancaster PA and I'm currently the lead developer at
-               <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://integro212.com/software"
-                  class="href">
-                  Integro Software.
-               </a>
-               I'm married to the love of my life and I enjoy freshly brewed coffee,
-               <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://itunes.apple.com/us/playlist/folk-indie-rock-alternative/pl.u-b6jNF59125z"
-                  class="href">
-                  good music,
-               </a>
-               and learning about science and technology.
-            </p>
+         <p class="tags">
+            I love building things for the internet. When I'm not doing that, I'm
+            <app-label *ngFor="let hobby of hobbies" size="sm" type="secondary">{{
+               hobby
+            }}</app-label>
+         </p>
 
-            <h2>Technologies</h2>
-            <p>
-               My main stack is Google Firestore, NestJS, Angular, and Node.js.<br />
-               I've also worked with these languages and tools: C, Python, JavaScript,
-               HTML, CSS, NativeScript, MongoDB, PostgreSQL, and SQLite.
-            </p>
+         <p>Enough about me. Wait no, this is all about me.</p>
+      </section>
 
-            <h2>Certifications</h2>
-            <p>
-               <!-- <a target="_blank" rel="noopener noreferrer" href="https://courses.edx.org/certificates/b689cf80383f4fbe8d0102aae809d633" class="href"> -->
-               HarvardX CS50's Intro to Computer Science
-               <!-- </a> -->
-               was my starting point. From there, I've taken more online classes and
-               learned by building things.
-            </p>
-         </article>
-      </div>
-   </div>
+      <section>
+         <h2>Technologies I Use</h2>
 
-   <app-footer></app-footer>
-</div>
+         <p>
+            I mostly use
+            <br />
+            <app-label *ngFor="let skill of mainSkills" type="dark" size="sm">{{
+               skill
+            }}</app-label>
+         </p>
+
+         <p>
+            But also
+            <br />
+            <app-label *ngFor="let skill of otherSkills" type="dark" size="sm">{{
+               skill
+            }}</app-label>
+         </p>
+      </section>
+
+      <section>
+         <h2>Stuff I've Built</h2>
+
+         <p>
+            <app-label *ngFor="let project of projects" type="dark" size="sm">{{
+               project.name
+            }}</app-label>
+         </p>
+
+         <app-routerlink url="/work">Check out my work!</app-routerlink>
+      </section>
+   </main>
+</app-page>

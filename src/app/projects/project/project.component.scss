@@ -1,7 +1,7 @@
 @import "src/scss/_variables.scss";
 
 .projectCard {
-   margin-bottom: 20px;
+   margin-bottom: 30px;
    max-width: 700px;
 }
 
@@ -21,27 +21,7 @@
    flex-wrap: wrap;
 
    > * {
-      color: $theme-four;
       margin: 0 10px 10px 0;
-      font-size: 0.8rem;
-      padding: 1px 6px;
-   }
-
-   .role,
-   .type,
-   .length {
-      background-color: #ffd9ce;
-      color: $theme-three;
-   }
-
-   a {
-      display: flex;
-      align-items: center;
-      background-color: $theme-two;
-   }
-
-   a:hover {
-      text-decoration: none;
    }
 
    .material-symbols-outlined {

@@ -8,12 +8,16 @@ footer {
    display: flex;
    justify-content: center;
    align-items: center;
+}
 
-   a {
-      color: $theme-four;
-   }
+app-href:nth-child(1) {
+   margin-right: 30px;
+}
 
-   #linkedin {
-      margin-right: 20px;
-   }
+.copyrightText {
+   font-size: 0.85rem;
+}
+
+.copyrightSymbol {
+   font-size: 1.2rem;
 }
