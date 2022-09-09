@@ -1,4 +1,5 @@
-import { Component } from "@angular/core"
+import { ChangeDetectionStrategy, Component } from "@angular/core"
+import { TimeService } from "../time.service"
 
 interface Link {
    url: string
@@ -8,7 +9,8 @@ interface Link {
 @Component({
    selector: "app-footer",
    templateUrl: "./footer.component.html",
-   styleUrls: ["./footer.component.scss"]
+   styleUrls: ["./footer.component.scss"],
+   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FooterComponent {
    public links: Link[] = [
@@ -27,4 +29,6 @@ export class FooterComponent {
    ]
 
    public thisYear = new Date().getFullYear()
+
+   constructor(public timeSvc: TimeService) {}
 }

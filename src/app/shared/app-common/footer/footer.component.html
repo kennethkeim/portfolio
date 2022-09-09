@@ -1,11 +1,12 @@
 <!-- footer -->
 <footer>
    <div>
-      <div class="mb-1">
+      <div class="mb-2">
          <app-href *ngFor="let link of links" [url]="link.url" type="light" size="sm">{{
             link.text
          }}</app-href>
       </div>
+      <p class="yoe">{{ timeSvc.yoe$ | async }} years of experience</p>
       <p>
          <span class="copyrightSymbol">&copy;</span>
          <span class="copyrightText"> {{ thisYear }} </span>
