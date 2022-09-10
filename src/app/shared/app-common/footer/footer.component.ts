@@ -24,7 +24,7 @@ export class FooterComponent {
       },
       {
          text: "Contact Me",
-         url: "mailto:kkeim77@gmail.com"
+         url: "mailto:hey@kennethkeim.com"
       }
    ]
 
