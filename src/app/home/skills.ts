@@ -2,8 +2,6 @@ export const mainSkills: string[] = [
    // languages (kind of)
    "TypeScript",
    "Node.js",
-   "HTML",
-   "CSS",
 
    // frameworks and libs
    "NestJS",
