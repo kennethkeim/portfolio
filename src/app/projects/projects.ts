@@ -11,7 +11,7 @@ export const projects: Project[] = [
    {
       name: "Production Line Mfg Software",
       description:
-         "Integrate with QuickBooks and manage the production of cabinetry parts for the RV industry. All updates are synced accross the factory in realtime.",
+         "Integrate with QuickBooks and manage the production of cabinetry parts for the RV industry. All updates are synced across the factory in realtime.",
       type: "Fullstack",
       role: "Lead Architect",
       length: ">1 year",
