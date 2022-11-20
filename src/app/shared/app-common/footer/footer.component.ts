@@ -16,7 +16,7 @@ export class FooterComponent {
    public links: Link[] = [
       {
          text: "LinkedIn",
-         url: "https://www.linkedin.com/in/kenneth-keim-4b055214a"
+         url: "https://www.linkedin.com/in/kennethkeim"
       },
       {
          text: "GitHub",
