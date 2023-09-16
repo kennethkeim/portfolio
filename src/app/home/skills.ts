@@ -5,13 +5,14 @@ export const mainSkills: string[] = [
 
    // frameworks and libs
    "NestJS",
+   "AWS",
    "Angular",
-   "Nx",
    "RxJS",
    "Bootstrap",
 
    // databases
-   "Firestore"
+   "Firestore",
+   "DynamoDB"
 ]
 
 export const otherSkills: string[] = [
