@@ -4,14 +4,12 @@ export const mainSkills: string[] = [
    "Node.js",
 
    // frameworks and libs
-   "NestJS",
-   "AWS",
    "Angular",
-   "RxJS",
-   "Bootstrap",
+   "Next.js",
+   "Tailwind CSS",
 
-   // databases
-   "Firestore",
+   // cloud, db
+   "AWS",
    "DynamoDB"
 ]
 
@@ -28,10 +26,11 @@ export const otherSkills: string[] = [
    "Stripe",
    "Angular Material",
 
-   // databases
+   // cloud, db
    "MongoDB",
    "PostgreSQL",
-   "SQLite"
+   "SQLite",
+   "Firestore"
 ]
 
 export const allSkills: string[] = [...mainSkills, ...otherSkills]
