@@ -1,50 +1,51 @@
-<app-page yAlign="center">
-   <div class="row align-items-center justify-content-center">
-      <figure class="col-10 col-sm-8 col-md-6 col-xl-4 col-xxl-3">
-         <img src="~/../assets/images/profile-bw-sq-optimized.jpg" alt="Photo of me" />
-      </figure>
+<app-page>
+   <article class="editorial-content">
+      <!-- Hero Section -->
+      <section class="hero">
+         <div class="intro">
+            <img
+               class="avatar"
+               src="assets/images/profile-bw-sq-optimized.jpg"
+               alt="Kenneth Keim" />
+            <p class="greeting">Hi, I'm Kenneth</p>
+         </div>
+         <h1>I build things for the internet.</h1>
+         <p class="bio">
+            12+ years crafting SAAS products. Currently a software engineer at
+            Evernorth Health Services, a Cigna Group company.
+         </p>
+      </section>
 
-      <main class="col-12 col-lg-6">
-         <section>
-            <h1 class="mt-0">Hi, I'm Kenneth</h1>
+      <hr />
 
-            <p>
-               I love building things for the internet. When I'm not doing that, I'm
-               <app-label *ngFor="let hobby of hobbies" size="sm" type="secondary">{{
-                  hobby
-               }}</app-label>
-            </p>
-         </section>
+      <!-- Expertise Section -->
+      <section class="expertise">
+         <h2>Expertise</h2>
+         <p class="skill-text">
+            I mostly work with
+            <span class="skill-list">{{ mainSkills.join(', ') }}.</span>
+         </p>
+         <p class="skill-text secondary">
+            Also experienced with
+            <span class="skill-list">{{ otherSkills.join(', ') }}.</span>
+         </p>
+      </section>
 
-         <section>
-            <h2>Technologies I Use</h2>
+      <hr />
 
-            <p>I mostly use</p>
-            <div class="labels mb-4">
-               <app-label *ngFor="let skill of mainSkills" type="dark" size="sm">
-                  {{ skill }}
-               </app-label>
-            </div>
-
-            <p>But also</p>
-            <div class="labels">
-               <app-label *ngFor="let skill of otherSkills" type="dark" size="sm">
-                  {{ skill }}
-               </app-label>
-            </div>
-         </section>
-
-         <section>
-            <h2>Stuff I've Built</h2>
-
-            <div class="labels mb-4">
-               <app-label *ngFor="let project of projects" type="dark" size="sm">
-                  {{ project.name }}
-               </app-label>
-            </div>
-
-            <app-routerlink url="/work">Check out my work!</app-routerlink>
-         </section>
-      </main>
-   </div>
+      <!-- Selected Work Section -->
+      <section class="work">
+         <h2>Selected Work</h2>
+         <ul class="project-list">
+            <li *ngFor="let project of projects">
+               <span class="project-name">{{ project.name }}</span>
+               <span class="arrow">&rarr;</span>
+               <span class="project-desc">{{ project.description }}</span>
+            </li>
+         </ul>
+         <a class="view-all" routerLink="/work">
+            View all projects <span class="arrow">&rarr;</span>
+         </a>
+      </section>
+   </article>
 </app-page>

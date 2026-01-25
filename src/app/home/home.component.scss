@@ -1,48 +1,203 @@
 @import "src/scss/_variables.scss";
 
-.row {
+.editorial-content {
+   max-width: $width-content;
    width: 100%;
+   margin: 0 auto;
+   padding: 0 $body-spc;
 }
 
-figure {
-   // layout element height should be close to final height before image loads
-   min-height: 250px;
+// Hero Section
+.hero {
+   padding-top: 40px;
+}
+
+.intro {
    display: flex;
-   justify-content: flex-end;
+   align-items: center;
+   gap: 16px;
+   margin-bottom: 24px;
 }
 
-img {
-   width: 100%;
-   margin-bottom: 20px;
-   max-width: 400px;
+.avatar {
+   width: 56px;
+   height: 56px;
+   border-radius: 50%;
    object-fit: cover;
 }
 
-section {
-   margin-bottom: 30px;
+.greeting {
+   font-family: "Fraunces", Georgia, serif;
+   font-size: $font-size-lg;
+   color: $text-secondary;
+   margin: 0;
+}
+
+h1 {
+   font-family: "Fraunces", Georgia, serif;
+   font-size: $font-size-2xl;
+   font-weight: 400;
+   line-height: $line-height-tight;
+   color: $text-primary;
+   margin: 0 0 24px 0;
+}
+
+.bio {
+   font-size: $font-size-base;
+   color: $text-secondary;
+   line-height: $line-height-base;
+   max-width: 540px;
+}
+
+// Horizontal rule
+hr {
+   border: none;
+   border-top: 1px solid $bg-tertiary;
+   margin: $section-spacing 0;
+}
+
+// Expertise Section
+.expertise {
+   h2 {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: $font-size-lg;
+      font-weight: 600;
+      color: $text-primary;
+      margin: 0 0 24px 0;
+   }
+}
+
+.skill-text {
+   font-size: $font-size-base;
+   color: $text-primary;
+   line-height: $line-height-loose;
+   margin-bottom: 12px;
+
+   &.secondary {
+      color: $text-secondary;
+   }
 
    &:last-child {
       margin-bottom: 0;
    }
 }
 
-h1,
-h2 {
-   font-size: 2rem;
-   margin-bottom: 15px;
+.skill-list {
+   font-family: "JetBrains Mono", monospace;
+   font-size: $font-size-sm;
 }
 
-p,
-.labels {
-   max-width: 700px;
+// Work Section
+.work {
+   h2 {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: $font-size-lg;
+      font-weight: 600;
+      color: $text-primary;
+      margin: 0 0 32px 0;
+   }
 }
 
-.labels {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: flex-start;
+.project-list {
+   list-style: none;
+   padding: 0;
+   margin: 0 0 32px 0;
+
+   li {
+      padding: 20px 0;
+      border-bottom: 1px solid $bg-tertiary;
+      transition: background-color $transition-base;
+
+      &:first-child {
+         border-top: 1px solid $bg-tertiary;
+      }
+
+      &:hover {
+         background-color: $bg-secondary;
+         margin: 0 -16px;
+         padding: 20px 16px;
+
+         .project-name {
+            color: $accent;
+         }
+      }
+   }
 }
 
-app-label {
-   margin-right: 7px;
+.project-name {
+   font-family: "Fraunces", Georgia, serif;
+   font-size: $font-size-base;
+   font-weight: 600;
+   color: $text-primary;
+   transition: color $transition-base;
+}
+
+.arrow {
+   color: $text-tertiary;
+   margin: 0 12px;
+   font-size: $font-size-sm;
+}
+
+.project-desc {
+   font-size: $font-size-sm;
+   color: $text-secondary;
+   display: block;
+   margin-top: 8px;
+   line-height: $line-height-base;
+}
+
+.view-all {
+   display: inline-flex;
+   align-items: center;
+   font-size: $font-size-sm;
+   color: $accent;
+   transition: color $transition-base;
+
+   &:hover {
+      color: $accent-hover;
+   }
+
+   .arrow {
+      color: $accent;
+      margin-left: 8px;
+      margin-right: 0;
+      transition: transform $transition-base;
+   }
+
+   &:hover .arrow {
+      transform: translateX(4px);
+   }
+}
+
+// Responsive adjustments
+@media screen and (max-width: 600px) {
+   h1 {
+      font-size: 2.5rem;
+   }
+
+   .avatar {
+      width: 48px;
+      height: 48px;
+   }
+
+   .greeting {
+      font-size: $font-size-base;
+   }
+
+   hr {
+      margin: $section-spacing-sm 0;
+   }
+
+   .project-desc {
+      display: block;
+   }
+
+   .arrow {
+      display: none;
+   }
+
+   .project-list li:hover {
+      margin: 0;
+      padding: 20px 0;
+   }
 }

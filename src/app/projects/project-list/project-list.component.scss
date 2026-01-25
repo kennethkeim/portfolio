@@ -1,5 +1,15 @@
-// @import "src/scss/_variables.scss";
+@import "src/scss/_variables.scss";
 
 main {
-   max-width: 740px;
+   max-width: $width-content;
+   width: 100%;
+   padding: 40px $body-spc;
+}
+
+h1 {
+   font-family: "Fraunces", Georgia, serif;
+   font-size: $font-size-xl;
+   font-weight: 600;
+   color: $text-primary;
+   margin: 0 0 48px 0;
 }

@@ -1,30 +1,63 @@
-// variable semantics
-// the naming of $primary-bright-dark communicates:
-// whether it's the primary color to reach for
-// whether it's bright/muted for color psychology
-// whether it's dark/light for background/foreground color pairings
+// Dark Editorial Theme Colors
 
-// theme colors
-$primary-bright-dark: #daa520;
-$primary-bright-dark-hover: #c3941d;
-$secondary: #777;
-$dark: #222;
-$light: #fff;
+// Backgrounds
+$bg-primary: #0f0f0f;        // Near-black, rich depth
+$bg-secondary: #1a1a1a;      // Slightly lighter for cards/sections
+$bg-tertiary: #252525;       // Hover states, borders
 
-// set colors of each section of the page
-// $bg-navbar:
-$text-navbar: $dark;
-$bg-footer: $dark;
-$text-footer: $light;
-$bg-page: $light;
-$text-page: $dark;
+// Text
+$text-primary: #e8e4df;      // Warm off-white (not harsh pure white)
+$text-secondary: #9a958f;    // Muted for captions, metadata
+$text-tertiary: #5c5854;     // Very subtle, decorative
 
-$text-href: $primary-bright-dark;
-$text-href-hover: $primary-bright-dark-hover;
+// Accent
+$accent: #c9a962;            // Warm gold — refined, classic
+$accent-hover: #b8994f;      // Darker gold for hover states
 
+// Legacy color mappings (for backward compatibility during transition)
+$primary-bright-dark: $accent;
+$primary-bright-dark-hover: $accent-hover;
+$secondary: $text-secondary;
+$dark: $bg-primary;
+$light: $text-primary;
+
+// Section colors
+$text-navbar: $text-primary;
+$bg-footer: $bg-primary;
+$text-footer: $text-secondary;
+$bg-page: $bg-primary;
+$text-page: $text-primary;
+
+// Link colors
+$text-href: $accent;
+$text-href-hover: $accent-hover;
+
+// Layout
+$width-content: 720px;       // Narrow editorial column
 $width-md: 600px;
 $body-spc: 15px;
 
-// update .page-content min height if changing this
-$footerH: 100px;
-$navbarH: 50px;
+// Spacing
+$section-spacing: 80px;      // Between major sections
+$section-spacing-sm: 48px;   // Between subsections
+
+// Heights
+$footerH: auto;              // Let footer size naturally
+$navbarH: 64px;              // Taller navbar
+
+// Type Scale
+$font-size-xs: 0.75rem;      // 12px - metadata, captions
+$font-size-sm: 0.875rem;     // 14px - secondary text
+$font-size-base: 1.125rem;   // 18px - body text
+$font-size-lg: 1.5rem;       // 24px - h3, section titles
+$font-size-xl: 2.25rem;      // 36px - h2
+$font-size-2xl: 3.5rem;      // 56px - h1, hero text
+$font-size-3xl: 5rem;        // 80px - dramatic hero (optional)
+
+// Line Heights
+$line-height-tight: 1.2;
+$line-height-base: 1.6;      // Generous for readability
+$line-height-loose: 1.8;
+
+// Transitions
+$transition-base: 200ms ease-out;
