@@ -11,8 +11,9 @@
          </div>
          <h1>I build things for the internet.</h1>
          <p class="bio">
-            12+ years crafting SAAS products. Currently a software engineer at
-            Evernorth Health Services, a Cigna Group company.
+            {{ yoeRounded$ | async }}+ years crafting SAAS products. I built a pilot
+            locator platform serving 400+ thermal drone operators across the US, and I'm
+            working on a new product for ag drone sprayers.
          </p>
       </section>
 
@@ -23,11 +24,11 @@
          <h2>Expertise</h2>
          <p class="skill-text">
             I mostly work with
-            <span class="skill-list">{{ mainSkills.join(', ') }}.</span>
+            <span class="skill-list">{{ mainSkills.join(", ") }}.</span>
          </p>
          <p class="skill-text secondary">
             Also experienced with
-            <span class="skill-list">{{ otherSkills.join(', ') }}.</span>
+            <span class="skill-list">{{ otherSkills.join(", ") }}.</span>
          </p>
       </section>
 
