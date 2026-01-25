@@ -2,31 +2,61 @@
 
 .app-btn,
 .app-label {
-   color: $light;
+   font-family: "JetBrains Mono", monospace;
+   display: inline-block;
+   transition: color $transition-base, border-color $transition-base, background-color $transition-base;
 
    &.sm {
-      padding: 1px 6px;
-      font-size: 0.8rem;
+      padding: 2px 8px;
+      font-size: $font-size-xs;
    }
 
    &.md {
-      padding: 3px 6px;
+      padding: 4px 10px;
+      font-size: $font-size-sm;
    }
 
+   // Subtle bordered style (default for dark theme)
    &.primary {
-      background-color: $primary-bright-dark;
+      color: $accent;
+      background-color: transparent;
+      border: 1px solid $accent;
+
+      &:hover {
+         background-color: rgba($accent, 0.1);
+      }
    }
 
    &.secondary {
-      background-color: $secondary;
+      color: $text-secondary;
+      background-color: transparent;
+      border: 1px solid $bg-tertiary;
+
+      &:hover {
+         color: $text-primary;
+         border-color: $text-secondary;
+      }
    }
 
    &.dark {
-      background-color: $dark;
+      color: $text-secondary;
+      background-color: transparent;
+      border: 1px solid $bg-tertiary;
+
+      &:hover {
+         color: $text-primary;
+         border-color: $text-secondary;
+      }
    }
 
    &.light {
-      background-color: $light;
-      color: $dark;
+      color: $text-primary;
+      background-color: transparent;
+      border: 1px solid $bg-tertiary;
+
+      &:hover {
+         color: $accent;
+         border-color: $accent;
+      }
    }
 }

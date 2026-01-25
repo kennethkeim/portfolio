@@ -1,17 +1,22 @@
 <div *ngIf="project" class="projectCard">
-   <h3 class="name">{{ project.name }}</h3>
+   <div class="titleBar">
+      <h3 class="name">{{ project.name }}</h3>
+      <p>{{ project.startDate }}</p>
+   </div>
 
    <p class="description">{{ project.description }}</p>
 
    <div class="tagRow">
       <app-label size="sm" type="dark">{{ project.role }}</app-label>
 
-      <app-label size="sm" type="dark">{{ project.type }}</app-label>
+      <!-- <app-label size="sm" type="dark">{{ project.type }}</app-label> -->
 
-      <app-label size="sm" type="dark">{{ project.length }}</app-label>
+      <!-- <app-label *ngIf="project.length" size="sm" type="dark">
+         {{ project.length }}
+      </app-label> -->
 
       <app-href *ngFor="let link of project.links" [url]="link.url" size="sm">
-         <span class="material-symbols-outlined me-1">
+         <span class="material-symbols-outlined mr-1">
             {{ link.type === "video" ? "movie" : "link" }}
          </span>
          <span>{{ link.text }}</span>

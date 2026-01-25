@@ -1,21 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark Editorial Theme - Global Styles */
+@import "./scss/_variables.scss";
 @import "./scss/_typography.scss";
-@import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~normalize.css/normalize.css";
 @import "./scss/_reset.scss";
-@import "./scss/_variables.scss";
 
-// FORMS
+// Global dark background
+html {
+   scroll-behavior: smooth;
+   background-color: $bg-primary;
+}
+
+body {
+   background-color: $bg-primary;
+   color: $text-primary;
+}
+
+// Page fade-in animation
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+      transform: translateY(8px);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.page-content {
+   animation: fadeIn 600ms ease-out;
+}
+
+// Staggered section reveals
+section {
+   animation: fadeIn 600ms ease-out;
+   animation-fill-mode: both;
+
+   &:nth-child(1) { animation-delay: 0ms; }
+   &:nth-child(2) { animation-delay: 100ms; }
+   &:nth-child(3) { animation-delay: 200ms; }
+   &:nth-child(4) { animation-delay: 300ms; }
+}
+
+// Link hover transitions
+a {
+   transition: color $transition-base, text-decoration-color $transition-base;
+
+   &:hover {
+      color: $accent;
+      text-decoration-color: $accent;
+   }
+}
+
+// Horizontal rule dividers - editorial style
+hr {
+   border: none;
+   border-top: 1px solid $bg-tertiary;
+   margin: $section-spacing 0;
+}
+
+// Selection styling
+::selection {
+   background-color: $accent;
+   color: $bg-primary;
+}
+
+// Forms (preserved from original)
 input.ng-valid.ng-touched,
 select.ng-valid.ng-touched,
 textarea.ng-valid.ng-touched {
-   border-left: 4px solid green;
+   border-left: 4px solid #4a7c59;
 }
 
 input.ng-invalid.ng-touched,
 select.ng-invalid.ng-touched,
 textarea.ng-invalid.ng-touched {
-   border-left: 4px solid red;
+   border-left: 4px solid #c25450;
 }
 
 [disabled] {

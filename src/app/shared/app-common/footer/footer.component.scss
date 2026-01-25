@@ -1,28 +1,45 @@
 @import "src/scss/_variables.scss";
 
 footer {
-   background: $bg-footer;
-   color: $text-footer;
-   height: $footerH;
-   text-align: center;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   background: transparent;
+   border-top: 1px solid $bg-tertiary;
+   padding: 48px $body-spc;
 }
 
-app-href {
-   margin-right: 30px;
+.footer-content {
+   max-width: $width-content;
+   margin: 0 auto;
+   text-align: center;
+}
 
-   &:last-child {
-      margin-right: 0;
+.links {
+   margin-bottom: 16px;
+
+   a {
+      color: $text-secondary;
+      font-size: $font-size-sm;
+      transition: color $transition-base;
+
+      &:hover {
+         color: $accent;
+      }
    }
 }
 
-.copyrightText,
-.yoe {
-   font-size: 0.85rem;
+.separator {
+   color: $text-tertiary;
+   margin: 0 12px;
 }
 
-.copyrightSymbol {
-   font-size: 1.2rem;
+.copyright {
+   font-size: $font-size-xs;
+   color: $text-tertiary;
+}
+
+.yoe {
+   color: $text-secondary;
+}
+
+.dot {
+   margin: 0 8px;
 }

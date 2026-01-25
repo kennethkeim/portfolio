@@ -1,34 +1,36 @@
 @import "src/scss/_variables.scss";
 
 .page {
-   background-color: $bg-page;
+   background-color: $bg-primary;
+   min-height: 100vh;
 }
 
 .page-content {
-   padding: 100px 40px;
+   padding: 40px $body-spc 80px;
    color: $text-page;
    display: flex;
+   flex-direction: column;
 
-   // this makes all pages fill up the view height
+   // This makes all pages fill up the view height
    // and pushes the footer down to the bottom of the page
-   // 150px accounts for footer and navbar height
-   min-height: calc(100vh - 150px);
+   min-height: calc(100vh - #{$navbarH} - 120px);
    margin: 0 auto;
+   width: 100%;
 
    &.y-center {
-      align-items: center;
-   }
-
-   &.y-top {
-      align-items: flex-start;
-   }
-
-   &.x-center {
       justify-content: center;
    }
 
-   &.x-left {
+   &.y-top {
       justify-content: flex-start;
+   }
+
+   &.x-center {
+      align-items: center;
+   }
+
+   &.x-left {
+      align-items: flex-start;
    }
 }
 

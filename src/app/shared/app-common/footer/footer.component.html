@@ -1,16 +1,14 @@
-<!-- footer -->
 <footer>
-   <div>
-      <div class="mb-2">
-         <app-href *ngFor="let link of links" [url]="link.url" type="light" size="sm">{{
-            link.text
-         }}</app-href>
+   <div class="footer-content">
+      <div class="links">
+         <a *ngFor="let link of links; let last = last" [href]="link.url" target="_blank" rel="noopener">
+            {{ link.text }}<span *ngIf="!last" class="separator">&middot;</span>
+         </a>
       </div>
-      <p class="yoe">{{ timeSvc.yoe$ | async }} years of experience</p>
-      <p>
-         <span class="copyrightSymbol">&copy;</span>
-         <span class="copyrightText"> {{ thisYear }} </span>
-         <span class="copyrightText">Kenneth Keim</span>
+      <p class="copyright">
+         <span class="yoe">{{ timeSvc.yoe$ | async }} years of experience</span>
+         <span class="dot">&middot;</span>
+         <span>&copy; {{ thisYear }} Kenneth Keim</span>
       </p>
    </div>
 </footer>
