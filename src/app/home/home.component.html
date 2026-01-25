@@ -9,7 +9,10 @@
                alt="Kenneth Keim" />
             <p class="greeting">Hi, I'm Kenneth</p>
          </div>
-         <h1>I build things for the internet.</h1>
+         <h1>
+            I <span class="typewriter-verb">{{ displayedVerb }}</span
+            ><span class="cursor">|</span> software.
+         </h1>
          <p class="bio">
             {{ yoeRounded$ | async }}+ years crafting SAAS products. I built a pilot
             locator platform serving 400+ thermal drone operators across the US, and I'm
