@@ -11,10 +11,12 @@ import { map } from "rxjs"
    styleUrls: ["./home.component.scss"]
 })
 export class HomeComponent implements OnInit, OnDestroy {
-   mainSkills = mainSkills
-   otherSkills = otherSkills
    hobbies = hobbies
    projects = projects.filter((p) => p.showOnHomePage)
+
+   // Formatted skill lists
+   mainSkillsFormatted = ""
+   otherSkillsFormatted = ""
 
    yoeRounded$
 
@@ -40,7 +42,16 @@ export class HomeComponent implements OnInit, OnDestroy {
    }
 
    ngOnInit(): void {
+      this.mainSkillsFormatted = this.formatList(mainSkills)
+      this.otherSkillsFormatted = this.formatList(otherSkills)
       this.typewriterEffect()
+   }
+
+   private formatList(items: string[]): string {
+      if (items.length === 0) return ""
+      if (items.length === 1) return items[0]
+      if (items.length === 2) return `${items[0]} and ${items[1]}`
+      return `${items.slice(0, -1).join(", ")}, and ${items[items.length - 1]}`
    }
 
    ngOnDestroy(): void {
