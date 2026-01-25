@@ -1,12 +1,11 @@
-export const mainSkills: string[] = [
+export const mainSkills: string[] = ["Next.js", "React Native", "Postgres", "Vercel"]
+
+export const otherSkills: string[] = [
    "TypeScript",
-   "Next.js",
-   "React Native (Expo)",
-   "Postgres",
-   "Vercel",
+   "Node.js",
+   "Angular",
+   "DynamoDB",
    "AWS"
 ]
-
-export const otherSkills: string[] = ["Node.js", "Express", "Angular", "DynamoDB"]
 
 export const allSkills: string[] = [...mainSkills, ...otherSkills]
