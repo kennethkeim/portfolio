@@ -9,29 +9,45 @@ import { Project } from "./project.model"
 
 export const projects: Project[] = [
    {
-      name: "Production Line Mfg Software",
+      name: "nuWay AgTrack",
       description:
-         "Integrate with QuickBooks and manage the production of cabinetry parts for the RV industry. All updates are synced across the factory in realtime.",
+         "The easiest way for spray drone pilots to track pesticide applications. I'm currently working on this, and we expect to launch for the 2026 spraying season.",
       type: "Fullstack",
-      role: "Lead Architect",
-      length: ">1 year",
+      role: "Lead Engineer",
+      startDate: "May 2025",
       showOnHomePage: true
    },
    {
-      name: "Puppy Marketplace",
-      description:
-         "Full-service puppy marketplace with integrated payments and financing, in-app messaging, Android and iOS apps, and a blog. Breeder screening and escrow-like functionality to help with scam prevention.",
+      name: "Pilot Locator",
+      description: "A network serving 400+ thermal drone operators across the US.",
       type: "Fullstack",
-      role: "Lead Architect",
       length: ">1 year",
+      startDate: "Jun 2024",
+      role: "Lead Engineer",
       showOnHomePage: true,
       links: [
          {
             type: "page",
-            url: "https://www.integro212.com/articles/vippuppies-custom-software-case-study",
-            text: "Blog Post"
-         },
-         { type: "video", url: "https://youtu.be/yVWWEh_lOZc", text: "Video" }
+            text: "See the Map",
+            url: "https://www.dronedeerrecovery.com/pages/pilot-map"
+         }
+      ]
+   },
+   {
+      name: "Evernorth CareNav+",
+      description:
+         "The Evernorth CareNav+ mobile app integrates with many health & wellness benefit programs to provide access to all employee benefits in one app. I was an early team member and helped build the backend foundations for it, particularly with API service layers and standardized libraries for AWS Lambda. Evernorth Health Services is a Cigna Group company.",
+      type: "Backend",
+      length: ">1 year",
+      startDate: "Jan 2023",
+      role: "Team Lead",
+      showOnHomePage: true,
+      links: [
+         {
+            type: "page",
+            text: "See Product Page",
+            url: "https://www.evernorth.com/our-solutions/carenav-plus-connected-benefits-navigator"
+         }
       ]
    },
    {
@@ -39,69 +55,59 @@ export const projects: Project[] = [
       description:
          "Integrate with an IconTime time clock and NetSuite. Supervisors can review and approve time entries before sending them to NetSuite.",
       type: "Fullstack",
-      role: "Architect/Advisor",
+      role: "Advisor/Architect",
       length: "3-6 months",
-      showOnHomePage: true
+      startDate: "Mar 2022",
+      showOnHomePage: false
    },
    {
-      name: "Wellness Tracking for International First Responders",
+      name: "Wellness Tracking for First Responders",
       description:
          "Weekly ultra-short surveys for cadets serving in an international first responder organization. HR staff can monitor cadets and their mentors to ensure they are staying healthy in a high-stress environment.",
       type: "Fullstack",
-      role: "Lead Architect",
+      role: "Lead Engineer",
       length: "6-12 months",
-      showOnHomePage: true,
-      links: [
-         {
-            type: "page",
-            url: "https://www.integro212.com/articles/chazak-rescue",
-            text: "Blog Post"
-         },
-         { type: "video", url: "https://youtu.be/XWsbiBVwEvM", text: "Video" }
-      ]
+      startDate: "Nov 2021",
+      showOnHomePage: false
    },
    {
-      name: "Print-Ready PDF Generation",
+      name: "Production Line Mfg Software",
       description:
-         "Backend system to automate fetching orders from BigCommerce, buying postage, and combining shipping labels and greeting card templates into a print-ready pdf.",
-      type: "Backend",
-      role: "Sole Developer",
-      length: "1-3 months",
-      showOnHomePage: true
-   },
-   {
-      name: "Excel -> REST API",
-      description:
-         "Parse inventory items from a third party supplier's excel file and serve it on a REST API for my frontend.",
+         "Integrates with QuickBooks and manages the production of cabinetry parts for the RV industry. All updates are synced across the factory in real-time.",
       type: "Fullstack",
-      role: "Sole Developer",
-      length: "3-6 months",
-      showOnHomePage: true
+      role: "Lead Engineer",
+      length: ">1 year",
+      startDate: "Jan 2021",
+      showOnHomePage: false
    },
    {
       name: "Bakery Production",
       description:
-         "Pull orders from WooCommerce and summarize data needed for the production of the bakery items.",
+         "Pulls orders from WooCommerce and summarizes data needed for the production of bakery items.",
       type: "Fullstack",
-      role: "Sole Developer",
+      role: "Solo Developer",
       length: "<1 month",
-      links: [
-         {
-            type: "page",
-            url: "https://www.integro212.com/articles/swiss-made-bakery",
-            text: "Blog Post"
-         },
-         { type: "video", url: "https://youtu.be/e4UvsMNMms4", text: "Video" }
-      ]
+      startDate: "Jan 2020",
+      showOnHomePage: false
    },
    {
-      name: "Contact/Home Page",
-      description: "Simple one page website with with business and contact information.",
-      type: "Frontend",
-      role: "Sole Developer",
-      length: "<1 month",
-      links: [
-         { type: "page", url: "https://keimindustrialsurplus.com", text: "Home Page" }
-      ]
+      name: "On-Demand Printing Service",
+      description:
+         "Backend system to automate fetching orders from BigCommerce, buying postage, and combining shipping labels and greeting card templates into a print-ready PDF.",
+      type: "Backend",
+      role: "Solo Developer",
+      length: "1-3 months",
+      startDate: "Oct 2019",
+      showOnHomePage: false
+   },
+   {
+      name: "Excel > REST API",
+      description:
+         "Parses inventory items from a third-party supplier's Excel file and serves it on a REST API for my frontend. This was one of my first fullstack projects.",
+      type: "Fullstack",
+      role: "Solo Developer",
+      length: "3-6 months",
+      startDate: "Sep 2018",
+      showOnHomePage: false
    }
 ]

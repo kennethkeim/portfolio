@@ -11,6 +11,12 @@
    }
 }
 
+.titleBar {
+   display: flex;
+   justify-content: space-between;
+   color: $text-secondary;
+}
+
 .name {
    font-family: "Fraunces", Georgia, serif;
    font-size: $font-size-lg;
