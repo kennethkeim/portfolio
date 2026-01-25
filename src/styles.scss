@@ -1,7 +1,11 @@
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Dark Editorial Theme - Global Styles */
 @import "./scss/_variables.scss";
 @import "./scss/_typography.scss";
-@import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~normalize.css/normalize.css";
 @import "./scss/_reset.scss";
 

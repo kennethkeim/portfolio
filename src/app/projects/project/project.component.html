@@ -16,7 +16,7 @@
       </app-label> -->
 
       <app-href *ngFor="let link of project.links" [url]="link.url" size="sm">
-         <span class="material-symbols-outlined me-1">
+         <span class="material-symbols-outlined mr-1">
             {{ link.type === "video" ? "movie" : "link" }}
          </span>
          <span>{{ link.text }}</span>
