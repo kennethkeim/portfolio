@@ -35,7 +35,6 @@
 
 h1 {
    font-family: "Fraunces", Georgia, serif;
-   font-size: $font-size-2xl;
    font-weight: 400;
    line-height: $line-height-tight;
    color: $text-primary;
@@ -56,12 +55,16 @@ h1 {
 }
 
 @keyframes blink {
-   0%, 100% { opacity: 1; }
-   50% { opacity: 0; }
+   0%,
+   100% {
+      opacity: 1;
+   }
+   50% {
+      opacity: 0;
+   }
 }
 
 .bio {
-   font-size: $font-size-base;
    color: $text-secondary;
    line-height: $line-height-base;
    max-width: 540px;
@@ -189,10 +192,6 @@ hr {
 
 // Responsive adjustments
 @media screen and (max-width: 600px) {
-   h1 {
-      font-size: 2.5rem;
-   }
-
    .avatar {
       width: 48px;
       height: 48px;
