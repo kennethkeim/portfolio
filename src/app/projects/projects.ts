@@ -11,11 +11,18 @@ export const projects: Project[] = [
    {
       name: "nuWay AgTrack",
       description:
-         "The easiest way for spray drone pilots to track pesticide applications. I'm currently working on this, and we expect to launch for the 2026 spraying season.",
+         "The easiest way for spray drone pilots to track pesticide applications. Launched in June 2026.",
       type: "Fullstack",
-      role: "Lead Engineer",
+      role: "Solo Developer",
       startDate: "May 2025",
-      showOnHomePage: true
+      showOnHomePage: true,
+      links: [
+         {
+            type: "page",
+            text: "agtrack.io",
+            url: "https://agtrack.io"
+         }
+      ]
    },
    {
       name: "Pilot Locator",
@@ -23,7 +30,7 @@ export const projects: Project[] = [
       type: "Fullstack",
       length: ">1 year",
       startDate: "Jun 2024",
-      role: "Lead Engineer",
+      role: "Solo Developer",
       showOnHomePage: true,
       links: [
          {
